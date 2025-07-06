@@ -1,0 +1,386 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.logo img {
+  max-width: 100px;
+  height: 80px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #673ab7;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Main Content */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+#homepage-description {
+  padding: 0rem 0;
+  background-color: #f8f9fa;
+}
+
+#homepage-description h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  color: #495057;
+  text-align: center;
+}
+
+#homepage-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 0.1rem;
+  color: #6c757d;
+  /* max-width: 800px;
+  margin-left: 2vw;
+  margin-right: 2vw; */
+  text-align: center;
+}
+
+/* Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 7rem;
+}
+
+.tool-card {
+  background-color: #b2ebf2;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.tool-card:hover::before {
+  left: 100%;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tool-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #673ab7;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover .tool-icon {
+  transform: scale(1.1);
+  background-color: #5e35b1;
+}
+
+.tool-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.tool-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.use-tool-btn {
+  background-color: #333;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.tool-card:hover .use-tool-btn {
+  background-color: #673ab7;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 1rem 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #673ab7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #5e35b1;
+  transform: scale(1.1);
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  font-weight: 800;
+}
+
+.footer-links a:hover {
+  color: #673ab7;
+}
+
+@media (max-width: 767px) {
+  #homepage-description {
+    display: none;
+  }
+}
+
+/* Responsive Design */
+/* Hero Section Styles */
+.hero-section h2 {
+  text-align: center;
+  max-width: 90vw;
+  margin: 0 auto 1.2rem auto;
+  word-break: break-word;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 95vw;
+    text-transform: uppercase;
+    margin: 0 auto 1rem auto;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tool-card {
+    padding: 1.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h2 {
+    font-size: 1.3rem;
+    max-width: 98vw;
+  }
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
