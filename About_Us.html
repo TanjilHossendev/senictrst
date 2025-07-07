@@ -8,19 +8,31 @@
   <meta name="author" content="Tanjil" />
   <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon">
   <title>About Us | CodebyTanjil</title>
-  <link rel="stylesheet" href="assets/css/About_us.css" />
+  <link rel="preload" href="assets/css/About_us.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="preload" href="assets/css/About_us.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/About_us.css"></noscript></noscript>
   <!-- font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2) format('woff2'),
+                 url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo"><img src="assets/image/codebytanjil.png" alt=""></a>
+            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt=""></a>
             <nav>
                 <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -29,7 +41,7 @@
                 </div>
                 <ul id="nav-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="About_Us.html">About us</a></li>
                     <li><a href="index.html">ALL TOOL</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>

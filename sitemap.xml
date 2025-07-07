@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.codebytanjil.xyz/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.codebytanjil.xyz/About_Us</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codebytanjil.xyz/Disclaimer</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codebytanjil.xyz/privacy_policy</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codebytanjil.xyz/Terms_and_Conditions</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

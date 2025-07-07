@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our privacy policy at CodeByTanjil to understand how we collect, use, and protect your data while using our tools and services.">
+    <meta name="keywords" content="privacy policy, data protection, CodeByTanjil, user data, online tools,tanjil,tanjil">
+    <meta name="author" content="CodeByTanjil">
+    <link rel="canonical" href="https://www.codebytanjil.xyz/privacy.html">
+
     <title>Privacy Policy - CodeByTanjil</title>
     <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon">
     <!-- Font link -->
@@ -10,13 +15,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/privacy-policy.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2) format('woff2'),
+                 url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
+        }
+    </style>
+    <link rel="preload" href="assets/css/privacy-policy.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/privacy-policy.css"></noscript>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo"><img src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo"></a>
+            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo"></a>
             <nav>
                 <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -98,7 +115,7 @@
             </div>
             <div class="footer-right">
                 <ul class="footer-links">
-                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="privacy_policy.html">privacy policy</a></li>
                     <li><a href="Terms_and_Conditions.html">Terms and Condition</a></li>
                     <li><a href="Disclaimer.html">Disclaimer</a></li>
                 </ul>

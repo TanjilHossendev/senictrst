@@ -8,9 +8,12 @@
     <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon">
     <meta name="description"
         content="Discover our comprehensive collection of professional tools. Access 12 essential tools for productivity, creativity, and efficiency all in one place.">
-    <meta name="keywords" content="tools, productivity, online tools, utilities, professional tools">
+    <meta name="keywords" content="tools, productivity, online tools, utilities, professional tools,calculator,board foot calculator,cd interest calculator,terminus calculator,asphalt calculator,blox fruits calculator,calculadora de horas,cumulative gpa calculator,dave ramsey mortgage calculator,illinois paycheck calculator,land loan calculator,codebytanjil,tanjil">
     <!-- css link  -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </noscript>
 
 
     <!-- font link  -->
@@ -18,14 +21,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </noscript>
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2) format('woff2'),
+                url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo"><img src="assets/image/codebytanjil.png" alt=""></a>
+            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt=""></a>
             <nav>
                 <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -33,7 +50,7 @@
                     <span></span>
                 </div>
                 <ul id="nav-menu">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="About_Us.html">About us</a></li>
                     <li><a href="index.html">ALL TOOL</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -71,68 +88,7 @@
                 <span class="use-tool-btn">Use Tool</span>
             </a>
 
-            <!-- <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-palette"></i></div>
-                <p>Unleash your creativity with powerful design and artistic creation tools.</p>
-                <h3>Creative Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
 
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-cogs"></i></div>
-                <p>Essential utilities for file management, conversion, and system optimization.</p>
-                <h3>Utility Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-mobile-alt"></i></div>
-                <p>Mobile-optimized tools for productivity and efficiency on the go.</p>
-                <h3>Mobile Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-lock"></i></div>
-                <p>Advanced security utilities for protecting your data and privacy online.</p>
-                <h3>Security Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-briefcase"></i></div>
-                <p>Professional business tools for project management and collaboration.</p>
-                <h3>Business Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-globe"></i></div>
-                <p>Comprehensive web development and SEO optimization tools.</p>
-                <h3>Web Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-camera"></i></div>
-                <p>Professional media editing and processing tools for images and videos.</p>
-                <h3>Media Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-bullseye"></i></div>
-                <p>Strategic marketing and social media management tools for growth.</p>
-                <h3>Marketing Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
-
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-search"></i></div>
-                <p>Advanced research and data collection tools for comprehensive analysis.</p>
-                <h3>Research Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a> -->
         </section>
         <section id="homepage-description">
             <h2><strong>CodeByTanjil:</strong> Free & Accurate Online Calculators for Your Everyday Needs</h2>
@@ -169,8 +125,8 @@
         </div>
     </footer>
 
-        <!-- link js  -->
-        <script src="/assets/js/app.js"></script>
+    <!-- link js  -->
+    <script src="/assets/js/app.js" defer></script>
 </body>
 
 </html>
