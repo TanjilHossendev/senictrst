@@ -10,7 +10,6 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f7f7f7;
-    padding: 30px; /* Default padding for large desktops */
 }
 
 /* Header Styles */
@@ -28,13 +27,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem; /* Default padding large desktops */
+    padding: 0.2rem;
 }
 
 .logo img {
-    max-width: 120px;
-    height: 96px;
-    object-fit: contain;
+    max-width: 100px;
+    height: 80px;
 }
 
 .logo {
@@ -45,8 +43,6 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin: 0;
-    padding: 0;
 }
 
 nav a {
@@ -54,7 +50,7 @@ nav a {
     color: #333;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
@@ -91,27 +87,20 @@ main {
 
 .privacy-policy {
     background-color: #fff;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.privacy-policy h1 {
-    font-size: 2.8rem;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-
 .privacy-policy h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #2c3e50;
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
 .privacy-policy h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #2c3e50;
     margin: 2rem 0 1rem;
     font-weight: 500;
@@ -119,7 +108,7 @@ main {
 
 .privacy-policy p {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #555;
     font-weight: 400;
 }
@@ -127,12 +116,11 @@ main {
 .privacy-policy ul {
     list-style-type: disc;
     margin: 1rem 0 1.5rem 2rem;
-    padding-left: 0;
 }
 
 .privacy-policy ul li {
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #555;
     font-weight: 400;
 }
@@ -232,47 +220,12 @@ footer {
     color: #673ab7;
 }
 
-/* Responsive Design */
+/* Responsive design */
 
-/* Extra Small Phones: max-width 480px */
-@media only screen and (max-width: 480px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   body {
-    padding: 12px;
-  }
-
-  .header-container {
-    padding: 0.4rem 1rem;
-  }
-
-  .logo img {
-    max-width: 70px;
-    height: 56px;
-  }
-
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    flex-direction: column;
-    padding: 1rem;
-    gap: 0.5rem;
-    z-index: 1100;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav a {
-    font-size: 0.75rem;
-  }
-
-  .mobile-menu-toggle {
-    display: flex;
+    padding: 10px;
   }
 
   .privacy-policy {
@@ -280,84 +233,11 @@ footer {
   }
 
   .privacy-policy h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-policy h2 {
     font-size: 1.6rem;
-  }
-
-  .privacy-policy h2 {
-    font-size: 1.4rem;
-  }
-
-  .privacy-policy h3 {
-    font-size: 1.1rem;
-  }
-
-  .privacy-policy p,
-  .privacy-policy ul li {
-    font-size: 0.85rem;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .footer-links a {
-    font-size: 0.85rem;
-    font-weight: 600;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-/* Small Phones: max-width 576px */
-@media only screen and (min-width: 481px) and (max-width: 576px) {
-  body {
-    padding: 14px;
-  }
-
-  .header-container {
-    padding: 0.45rem 1.1rem;
-  }
-
-  .logo img {
-    max-width: 80px;
-    height: 64px;
-  }
-
-  nav ul {
-    gap: 0.8rem;
-  }
-
-  nav a {
-    font-size: 0.8rem;
-  }
-
-  .mobile-menu-toggle {
-    display: flex;
-  }
-
-  .privacy-policy {
-    padding: 1.25rem;
-  }
-
-  .privacy-policy h1 {
-    font-size: 1.75rem;
-  }
-
-  .privacy-policy h2 {
-    font-size: 1.5rem;
   }
 
   .privacy-policy h3 {
@@ -369,6 +249,40 @@ footer {
     font-size: 0.9rem;
   }
 
+  .header-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo img {
+    max-width: 80px;
+    height: 64px;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -381,12 +295,12 @@ footer {
 
   .footer-links {
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   .footer-links a {
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .social-icons {
@@ -394,40 +308,10 @@ footer {
   }
 }
 
-/* Tablets (Portrait): max-width 768px */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+/* Small devices (portrait tablets and large phones, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   body {
     padding: 15px;
-  }
-
-  .header-container {
-    padding: 0.6rem 1.2rem;
-  }
-
-  .logo img {
-    max-width: 90px;
-    height: 72px;
-  }
-
-  nav ul {
-    gap: 1rem;
-  }
-
-  nav a {
-    font-size: 0.85rem;
-  }
-
-  .mobile-menu-toggle {
-    display: none; /* Show full menu on tablets portrait */
-  }
-
-  nav ul {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    background: none;
-    box-shadow: none;
-    padding: 0;
   }
 
   .privacy-policy {
@@ -451,6 +335,23 @@ footer {
     font-size: 0.95rem;
   }
 
+  .header-container {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .logo img {
+    max-width: 90px;
+    height: 72px;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
   .footer-container {
     gap: 1.5rem;
   }
@@ -464,27 +365,10 @@ footer {
   }
 }
 
-/* Tablets (Landscape): max-width 992px */
+/* Medium devices (landscape tablets, 769px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
     padding: 20px;
-  }
-
-  .header-container {
-    padding: 1rem 1.5rem;
-  }
-
-  .logo img {
-    max-width: 100px;
-    height: 80px;
-  }
-
-  nav ul {
-    gap: 1.5rem;
-  }
-
-  nav a {
-    font-size: 0.9rem;
   }
 
   .privacy-policy {
@@ -508,6 +392,23 @@ footer {
     font-size: 1rem;
   }
 
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo img {
+    max-width: 100px;
+    height: 80px;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
   .footer-container {
     gap: 1.8rem;
   }
@@ -521,27 +422,10 @@ footer {
   }
 }
 
-/* Laptops/Desktops: max-width 1200px */
+/* Large devices (laptops/desktops, 993px to 1200px) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   body {
     padding: 25px;
-  }
-
-  .header-container {
-    padding: 1.2rem 1.8rem;
-  }
-
-  .logo img {
-    max-width: 110px;
-    height: 88px;
-  }
-
-  nav ul {
-    gap: 1.8rem;
-  }
-
-  nav a {
-    font-size: 0.95rem;
   }
 
   .privacy-policy {
@@ -565,6 +449,23 @@ footer {
     font-size: 1.05rem;
   }
 
+  .header-container {
+    padding: 1.2rem 1.8rem;
+  }
+
+  .logo img {
+    max-width: 110px;
+    height: 88px;
+  }
+
+  nav ul {
+    gap: 1.8rem;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
   .footer-container {
     gap: 2rem;
   }
@@ -578,27 +479,10 @@ footer {
   }
 }
 
-/* Large Desktops: min-width 1201px */
+/* Extra large devices (large desktops, 1201px and up) */
 @media only screen and (min-width: 1201px) {
   body {
     padding: 30px;
-  }
-
-  .header-container {
-    padding: 1.5rem 2rem;
-  }
-
-  .logo img {
-    max-width: 120px;
-    height: 96px;
-  }
-
-  nav ul {
-    gap: 2rem;
-  }
-
-  nav a {
-    font-size: 1rem;
   }
 
   .privacy-policy {
@@ -620,6 +504,23 @@ footer {
   .privacy-policy p,
   .privacy-policy ul li {
     font-size: 1.1rem;
+  }
+
+  .header-container {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: 96px;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
   }
 
   .footer-container {

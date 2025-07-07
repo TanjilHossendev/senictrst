@@ -10,7 +10,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  padding: 20px; /* default padding for smaller devices */
+  padding: 20px;
 }
 
 h1 {
@@ -54,7 +54,6 @@ header {
 .logo img {
   max-width: 100px;
   height: 80px;
-  object-fit: contain;
 }
 
 .logo {
@@ -65,8 +64,6 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 2rem;
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
@@ -175,33 +172,29 @@ footer {
   color: #673ab7;
 }
 
-/* =======================
-   Responsive Media Queries
-   ======================= */
-
-/* Extra Small Phones: max-width 480px */
-@media only screen and (max-width: 480px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   body {
     padding: 10px;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 15px;
   }
 
   p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     padding: 0 5px;
   }
 
   .header-container {
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo img {
-    max-width: 70px;
-    height: 56px;
+    max-width: 80px;
+    height: 64px;
   }
 
   nav ul {
@@ -215,19 +208,18 @@ footer {
     flex-direction: column;
     padding: 1rem;
     gap: 0.5rem;
-    z-index: 1100;
   }
 
   nav ul.active {
     display: flex;
   }
 
-  nav a {
-    font-size: 0.75rem;
-  }
-
   .mobile-menu-toggle {
     display: flex;
+  }
+
+  nav a {
+    font-size: 0.8rem;
   }
 
   .footer-container {
@@ -246,7 +238,7 @@ footer {
   }
 
   .footer-links a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
@@ -255,76 +247,14 @@ footer {
   }
 }
 
-/* Small Phones: max-width 576px */
-@media only screen and (min-width: 481px) and (max-width: 576px) {
-  body {
-    padding: 12px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-  }
-
-  p {
-    font-size: 0.9rem;
-    padding: 0 6px;
-  }
-
-  .header-container {
-    padding: 0.45rem 1.1rem;
-  }
-
-  .logo img {
-    max-width: 75px;
-    height: 60px;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav a {
-    font-size: 0.8rem;
-  }
-
-  .mobile-menu-toggle {
-    display: flex;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .footer-links a {
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-/* Tablets Portrait: max-width 768px */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+/* Small devices (portrait tablets and large phones, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   body {
     padding: 15px;
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 18px;
   }
 
@@ -334,7 +264,7 @@ footer {
   }
 
   .header-container {
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.2rem;
   }
 
   .logo img {
@@ -343,21 +273,11 @@ footer {
   }
 
   nav ul {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    background: none;
-    box-shadow: none;
-    padding: 0;
     gap: 1rem;
   }
 
   nav a {
     font-size: 0.85rem;
-  }
-
-  .mobile-menu-toggle {
-    display: none;
   }
 
   .footer-container {
@@ -373,14 +293,14 @@ footer {
   }
 }
 
-/* Tablets Landscape: max-width 992px */
+/* Medium devices (landscape tablets, 769px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
     padding: 20px;
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -419,14 +339,14 @@ footer {
   }
 }
 
-/* Laptops/Desktops: max-width 1200px */
+/* Large devices (laptops/desktops, 993px to 1200px) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   body {
     padding: 25px;
   }
 
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     margin-bottom: 22px;
   }
 
@@ -465,7 +385,7 @@ footer {
   }
 }
 
-/* Large Desktops: min-width 1201px */
+/* Extra large devices (large desktops, 1201px and up) */
 @media only screen and (min-width: 1201px) {
   body {
     padding: 30px;
