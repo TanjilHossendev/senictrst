@@ -1,117 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms and Conditions for using CodebyTanjil's online calculators and tools. Learn about our terms of service, user agreements, and policies.">
     <title>Terms and Conditions | CodebyTanjil</title>
+    
+    <!-- SEO -->
     <link rel="canonical" href="https://www.codebytanjil.xyz/Terms_and_Conditions">
+    
     <!-- OpenGraph Meta Tags -->
     <meta property="og:title" content="Terms and Conditions | CodebyTanjil">
-    <meta property="og:description" content="Read the terms and conditions for CodebyTanjil – your trusted source for accurate calculators.">
+    <meta property="og:description" content="Terms and Conditions for using CodebyTanjil's online calculators and tools. Learn about our terms of service, user agreements, and policies.">
     <meta property="og:url" content="https://www.codebytanjil.xyz/Terms_and_Conditions">
     <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
     <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "WebPage",
-      "name": "Terms and Conditions | CodebyTanjil",
-      "url": "https://www.codebytanjil.xyz/Terms_and_Conditions",
-      "description": "Read the terms and conditions for CodebyTanjil – your trusted source for accurate calculators."
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "Terms and Conditions | CodebyTanjil",
+        "url": "https://www.codebytanjil.xyz/Terms_and_Conditions",
+        "description": "Terms and Conditions for using CodebyTanjil's online calculators and tools. Learn about our terms of service, user agreements, and policies."
     }
     </script>
-    <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon" alt="CodebyTanjil Favicon">
-    <!-- Google Font -->
-    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1MmEU9fBBc4.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-    <!-- Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
-    <style>
-        @font-face {
-            font-family: 'Font Awesome 6 Free';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2) format('woff2'),
-                 url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
-        }
-    </style>
-
-    <!-- Custom CSS -->
-    <link rel="preload" href="assets/css/Terms_and_Conditions.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/Terms_and_Conditions.css"></noscript>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img fetchpriority="high" src="assets/image/codebytanjil.png" alt="CodebyTanjil Logo" width="100" height="80" />
-            </a>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About_Us.html">ABOUT US</a></li>
-                    <li><a href="index.html">ALL TOOL</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+<body class="font-roboto bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index.html" class="flex items-center space-x-2 group" aria-label="CodeByTanjil Home">
+                        <img src="./assets/image/codebytanjil.png" 
+                             alt="" 
+                             width="40" 
+                             height="40"
+                             class="h-10 w-10 object-contain transition-transform duration-300 group-hover:scale-110"
+                             fetchpriority="high">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">CodeByTanjil</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./About_Us.html" class="nav-link">About</a>
+                    <a href="./index.html#tools" class="nav-link">Tools</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button type="button" 
+                        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        onclick="toggleMobileMenu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-white/80 backdrop-blur-md border-t border-gray-100" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="./index.html" class="mobile-nav-link">Home</a>
+                    <a href="./About_Us.html" class="mobile-nav-link">About</a>
+                    <a href="./index.html#tools" class="mobile-nav-link">Tools</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="terms-content">
-        <h1>Terms and Conditions for CodebyTanjil</h1>
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <!-- Hero Section -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Terms and Conditions
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Last updated: January 1, 2024
+                </p>
+            </div>
 
-        <h1>Hey there! Just a quick note about CodebyTanjil</h1>
-        <p><strong>Last Updated:</strong> 08/07/2025</p>
+            <!-- Terms Content -->
+            <div class="bg-white rounded-2xl p-8 shadow-soft space-y-8 animate-section">
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">1. Agreement to Terms</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>By accessing or using CodebyTanjil's website and services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access our services.</p>
+                    </div>
+                </section>
 
-        <p>Welcome! So glad you're checking out <strong>CodebyTanjil</strong>. Before you dive deep into all the cool tools and info, please take a moment to read our terms.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">2. Use License</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>Permission is granted to temporarily access and use CodebyTanjil's calculators and tools for personal, non-commercial use. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Modify or copy the materials</li>
+                            <li>Use the materials for any commercial purpose</li>
+                            <li>Attempt to decompile or reverse engineer any software contained on CodebyTanjil's website</li>
+                            <li>Remove any copyright or other proprietary notations from the materials</li>
+                            <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <h2>1. Giving Us the Nod</h2>
-        <p>By using CodebyTanjil (our "Service"), you’re agreeing to our terms. If you don’t agree, please don’t use the site.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">3. Disclaimer</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>CodebyTanjil's tools and calculators are provided "as is". We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Implied warranties or merchantability</li>
+                            <li>Fitness for a particular purpose</li>
+                            <li>Non-infringement of intellectual property</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <h2>2. How You Can Use This Place</h2>
-        <p>We work hard to provide helpful calculators and info, but they’re not a substitute for professional advice. Use them as guides – at your own risk.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">4. Limitations</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>In no event shall CodebyTanjil or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use our tools and calculators.</p>
+                    </div>
+                </section>
 
-        <h2>3. Our Creative Space (Intellectual Property)</h2>
-        <p>Everything on this site – the design, code, content – is protected. Don’t use it without permission.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">5. Accuracy of Materials</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>While we strive to ensure the accuracy of our calculators and tools, the materials appearing on CodebyTanjil's website could include technical, typographical, or photographic errors. We do not warrant that any of the materials are accurate, complete, or current.</p>
+                    </div>
+                </section>
 
-        <h2>4. Nobody Wants Trouble, Right? (Limitation of Liability)</h2>
-        <p>We’re not responsible for errors, miscalculations, or any losses from using our tools. Always double-check important info with a professional.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">6. Links</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>CodebyTanjil has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by CodebyTanjil of the site. Use of any such linked website is at the user's own risk.</p>
+                    </div>
+                </section>
 
-        <h2>5. Where We Play by the Rules (Governing Law)</h2>
-        <p>All legal matters will be governed by the laws of the place where the owner of CodebyTanjil resides.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">7. Modifications</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>CodebyTanjil may revise these terms of service at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+                    </div>
+                </section>
 
-        <h2>6. Things Change (Updates to the Terms)</h2>
-        <p>We may update these terms occasionally. Keep an eye on this page to stay updated.</p>
-
-        <h2>7. Let's Chat! (Contact Us)</h2>
-        <p>Questions? Feel free to email: <a href="mailto:tangilm80@gmail.com">tangilm80@gmail.com</a></p>
-
-        <p>Thanks for visiting CodebyTanjil!</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-primary">8. Governing Law</h2>
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p>These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/image/codebytanjil.png" 
+                             alt="" 
+                             class="h-8 w-8"
+                             loading="lazy">
+                        <span class="text-lg font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">CodeByTanjil</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Professional tools and calculators for your everyday needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/codebytanjil" 
+                           class="social-icon"
+                           aria-label="Follow us on Facebook"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/codebytanjil" 
+                           class="social-icon"
+                           aria-label="Follow us on Twitter"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-                <p>© 2025 All rights reserved - CodebyTanjil</p>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html#tools" class="footer-link">All Tools</a></li>
+                        <li><a href="./About_Us.html" class="footer-link">About Us</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./privacy_policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="./Terms_and_Conditions.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="./Disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="mailto:contact@codebytanjil.xyz" class="footer-link flex items-center space-x-2">
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@codebytanjil.xyz</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890" class="footer-link flex items-center space-x-2">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (234) 567-890</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
-                    <li><a href="Terms_and_Conditions.html">Terms and Conditions</a></li>
-                    <li><a href="Disclaimer.html">Disclaimer</a></li>
-                </ul>
+
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <p class="text-center text-gray-400">
+                    © 2024 CodeByTanjil. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const button = document.querySelector('[aria-controls="mobile-menu"]');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            
+            menu.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById('mobile-menu');
+            const button = document.querySelector('[aria-controls="mobile-menu"]');
+            
+            if (!menu.contains(e.target) && !button.contains(e.target) && !menu.classList.contains('hidden')) {
+                menu.classList.add('hidden');
+                button.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Handle keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById('mobile-menu');
+                const button = document.querySelector('[aria-controls="mobile-menu"]');
+                
+                menu.classList.add('hidden');
+                button.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-section').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>

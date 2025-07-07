@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  /* Navigation */
+  .nav-link {
+    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary border-b-2 border-transparent hover:border-primary transition-all duration-200;
+  }
+
+  .nav-link[aria-current="page"] {
+    @apply border-primary text-primary;
+  }
+
+  .mobile-nav-link {
+    @apply block w-full px-4 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 transition-all duration-200;
+  }
+
+  /* Tool Cards */
+  .tool-card {
+    @apply block p-8 bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 relative overflow-hidden;
+  }
+
+  .tool-card::before {
+    @apply content-[''] absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 transition-opacity duration-500;
+  }
+
+  .tool-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .tool-icon {
+    @apply w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 text-primary rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6;
+  }
+
+  /* Feature Cards */
+  .feature-icon-wrapper {
+    @apply w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-6;
+  }
+
+  .feature-icon {
+    @apply text-2xl text-primary;
+  }
+
+  /* Contact Form */
+  .form-group {
+    @apply mb-6;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all duration-200 bg-white/70 backdrop-blur-sm;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 rounded-lg border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all duration-200 resize-none bg-white/70 backdrop-blur-sm min-h-[120px];
+  }
+
+  .form-submit {
+    @apply w-full px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg hover:from-primary-600 hover:to-secondary-600 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center space-x-2;
+  }
+
+  .form-submit:disabled {
+    @apply opacity-50 cursor-not-allowed hover:scale-100;
+  }
+
+  .form-error {
+    @apply mt-1 text-sm text-red-500;
+  }
+
+  .form-success {
+    @apply bg-green-50 text-green-800 p-4 rounded-lg mb-6 flex items-center;
+  }
+
+  .form-success-icon {
+    @apply w-5 h-5 text-green-400 mr-3;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-primary to-secondary hover:from-primary-600 hover:to-secondary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 transform hover:scale-105;
+  }
+
+  /* Section Animations */
+  .animate-section {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+
+  .animate-section.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Footer */
+  .footer-link {
+    @apply text-gray-400 hover:text-white transition-colors duration-200;
+  }
+
+  .social-icon {
+    @apply w-10 h-10 rounded-full bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:from-primary hover:to-secondary transition-all duration-300;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+/* Accessibility */
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-primary ring-offset-2;
+}
+
+/* Skip Link */
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md z-50;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-primary to-secondary rounded-full hover:from-primary-600 hover:to-secondary-600 transition-colors;
+}

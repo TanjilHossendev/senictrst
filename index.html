@@ -1,156 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Tools - Your One-Stop Solution</title>
+    <title>CodeByTanjil - Professional Online Tools & Calculators</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Access professional-grade calculators and tools for finance, construction, education, and more. Fast, accurate, and free to use.">
+    <meta name="keywords" content="calculator, board foot calculator, cd interest calculator, terminus calculator, asphalt calculator, blox fruits calculator, calculadora de horas, cumulative gpa calculator, dave ramsey mortgage calculator, illinois paycheck calculator, land loan calculator, codebytanjil, tanjil">
     <link rel="canonical" href="https://www.codebytanjil.xyz/">
-    <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="All Tools - Your One-Stop Solution">
-    <meta property="og:description" content="Discover our comprehensive collection of professional tools. Access 12 essential tools for productivity, creativity, and efficiency all in one place.">
-    <meta property="og:url" content="https://www.codebytanjil.xyz/">
-    <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.codebytanjil.xyz/">
+    <meta property="og:title" content="CodeByTanjil - Professional Online Tools & Calculators">
+    <meta property="og:description" content="Access professional-grade calculators and tools for finance, construction, education, and more. Fast, accurate, and free to use.">
+    <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeByTanjil - Professional Online Tools & Calculators">
+    <meta name="twitter:description" content="Access professional-grade calculators and tools for finance, construction, education, and more. Fast, accurate, and free to use.">
+    <meta name="twitter:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/image/codebytanjil_favicon.png">
+    <link rel="apple-touch-icon" href="./assets/image/codebytanjil_favicon.png">
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="./src/output.css" as="style">
+    <link rel="preload" href="./assets/image/codebytanjil.png" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "CodeByTanjil",
       "url": "https://www.codebytanjil.xyz/",
-      "description": "Discover our comprehensive collection of professional tools. Access 12 essential tools for productivity, creativity, and efficiency all in one place.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "CodeByTanjil",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png"
-        }
+      "description": "Access professional-grade calculators and tools for finance, construction, education, and more. Fast, accurate, and free to use.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.codebytanjil.xyz/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
-    <link rel="shortcut icon" href="assets/image/codebytanjil_favicon.png" type="image/x-icon" alt="CodebyTanjil Favicon">
-    <meta name="description"
-        content="Discover our comprehensive collection of professional tools. Access 12 essential tools for productivity, creativity, and efficiency all in one place.">
-    <meta name="keywords" content="tools, productivity, online tools, utilities, professional tools,calculator,board foot calculator,cd interest calculator,terminus calculator,asphalt calculator,blox fruits calculator,calculadora de horas,cumulative gpa calculator,dave ramsey mortgage calculator,illinois paycheck calculator,land loan calculator,codebytanjil,tanjil">
-    <!-- css link  -->
-    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </noscript>
-
-
-    <!-- font link  -->
-    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1MmEU9fBBc4.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- font awesome link -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </noscript>
-    <style>
-        @font-face {
-            font-family: 'Font Awesome 6 Free';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2) format('woff2'),
-                url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
-        }
-    </style>
 </head>
 
-<body>
+<body class="font-roboto bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
     <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt="CodebyTanjil Logo" width="100" height="80"></a>
-            <nav>
-                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index.html" class="flex items-center space-x-2 group" aria-label="CodeByTanjil Home">
+                        <img src="./assets/image/codebytanjil.png" 
+                             alt="" 
+                             width="40" 
+                             height="40"
+                             class="h-10 w-10 object-contain transition-transform duration-300 group-hover:scale-110"
+                             fetchpriority="high">
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">CodeByTanjil</span>
+                    </a>
                 </div>
-                <ul id="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About_Us.html">About us</a></li>
-                    <li><a href="index.html">ALL TOOL</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="./index.html" class="nav-link" aria-current="page">Home</a>
+                    <a href="./About_Us.html" class="nav-link">About</a>
+                    <a href="./index.html#tools" class="nav-link">Tools</a>
+                    <a href="./contact_us.html" class="nav-link">Contact us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button type="button" 
+                        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        onclick="toggleMobileMenu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-white/80 backdrop-blur-md border-t border-gray-100" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="./index.html" class="mobile-nav-link" aria-current="page">Home</a>
+                    <a href="./About_Us.html" class="mobile-nav-link">About</a>
+                    <a href="./index.html#tools" class="mobile-nav-link">Tools</a>
+                    <a href="./contact_us.html" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
-        <section class="hero-section">
-            <h1>TOOL</h1>
+    <main id="main-content" class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-in-up">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Professional Tools & Calculators
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s;">
+                    Access our comprehensive suite of professional calculators and tools. 
+                    Fast, accurate, and designed for your needs.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#tools" class="btn-primary">
+                        Explore Tools
+                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+<a href="./contact_us.html" class="btn-secondary">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <!-- Background Elements -->
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+            </div>
         </section>
 
         <!-- Tools Grid -->
-        <section class="tools-grid">
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-wrench"></i></div>
-                <p>Professional design utilities for creating stunning visuals and graphics with ease.</p>
-                <h3>Design Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
+        <section id="tools" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-section">
+                    Our Tools
+                </h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto animate-section">
+                    Discover our collection of professional calculators and tools designed to make your work easier and more efficient.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Financial Tools -->
+                    <a href="./calculators/dave-ramsey-mortgage.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-home text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Mortgage Calculator</h3>
+                        <p class="text-gray-600">Dave Ramsey's method for calculating mortgage payments and costs.</p>
+                    </a>
 
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-chart-bar"></i></div>
-                <p>Comprehensive data analysis and visualization tools for better insights.</p>
-                <h3>Analytics Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
+                    <a href="./calculators/cd-interest.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-piggy-bank text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">CD Interest Calculator</h3>
+                        <p class="text-gray-600">Calculate returns on Certificates of Deposit investments.</p>
+                    </a>
 
-            <a href="#" class="tool-card">
-                <div class="tool-icon"><i class="fas fa-pencil-alt"></i></div>
-                <p>Advanced text editing and writing assistance for professional content creation.</p>
-                <h3>Writing Tool</h3>
-                <span class="use-tool-btn">Use Tool</span>
-            </a>
+                    <a href="./calculators/land-loan.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-map-marked-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Land Loan Calculator</h3>
+                        <p class="text-gray-600">Estimate payments and terms for land purchase loans.</p>
+                    </a>
 
+                    <!-- Construction Tools -->
+                    <a href="./calculators/board-foot.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-ruler-combined text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Board Foot Calculator</h3>
+                        <p class="text-gray-600">Calculate lumber volume for construction projects.</p>
+                    </a>
 
+                    <a href="./calculators/asphalt.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-road text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Asphalt Calculator</h3>
+                        <p class="text-gray-600">Determine asphalt quantities for paving projects.</p>
+                    </a>
+
+                    <!-- Educational Tools -->
+                    <a href="./calculators/gpa.html" class="tool-card group animate-section">
+                        <div class="tool-icon">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">GPA Calculator</h3>
+                        <p class="text-gray-600">Calculate your cumulative Grade Point Average.</p>
+                    </a>
+                </div>
+            </div>
         </section>
-        <section id="homepage-description">
-            <h2><strong>CodeByTanjil:</strong> Free & Accurate Online Calculators for Your Everyday Needs</h2>
-            <p>
-                From complex financial planning with our <strong>Dave Ramsey Mortgage Calculator</strong> to precise
-                measurements using the <strong>Asphalt Calculator</strong>, <strong>CodeByTanjil</strong> provides a
-                powerful
-                suite of free online tools designed to make your life simpler. Get instant, reliable results — every
-                time.
-            </p>
 
+        <!-- Features Section -->
+        <section class="py-16 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-section">
+                    Why Choose Our Tools?
+                </h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto animate-section">
+                    Experience the difference with our professional-grade calculators and tools.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-xl transition-all duration-300 animate-section">
+                        <div class="bg-gradient-to-br from-primary/20 to-secondary/20 w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 transform transition-transform duration-300 hover:scale-110 hover:rotate-6">
+                            <i class="fas fa-bolt text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center">Fast & Efficient</h3>
+                        <p class="text-gray-600 text-center">Get instant results with our optimized calculators.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-xl transition-all duration-300 animate-section" style="animation-delay: 0.2s;">
+                        <div class="bg-gradient-to-br from-primary/20 to-secondary/20 w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 transform transition-transform duration-300 hover:scale-110 hover:rotate-6">
+                            <i class="fas fa-check-circle text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center">100% Accurate</h3>
+                        <p class="text-gray-600 text-center">Trust our precise calculations every time.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-xl transition-all duration-300 animate-section" style="animation-delay: 0.4s;">
+                        <div class="bg-gradient-to-br from-primary/20 to-secondary/20 w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 transform transition-transform duration-300 hover:scale-110 hover:rotate-6">
+                            <i class="fas fa-clock text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center">Always Available</h3>
+                        <p class="text-gray-600 text-center">Access our tools 24/7, completely free.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/image/codebytanjil.png" 
+                             alt="" 
+                             class="h-8 w-8"
+                             loading="lazy">
+                        <span class="text-lg font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">CodeByTanjil</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Professional tools and calculators for your everyday needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/codebytanjil" 
+                           class="social-icon"
+                           aria-label="Follow us on Facebook"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/codebytanjil" 
+                           class="social-icon"
+                           aria-label="Follow us on Twitter"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="copyright">© 2025 All rights reserved - All Tools</p>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html#tools" class="footer-link">All Tools</a></li>
+                        <li><a href="./About_Us.html" class="footer-link">About Us</a></li>
+<li><a href="./contact_us.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./privacy_policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="./Terms_and_Conditions.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="./Disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="mailto:contact@codebytanjil.xyz" class="footer-link flex items-center space-x-2">
+                                <i class="fas fa-envelope"></i>
+                                <span>tangilm80@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890" class="footer-link flex items-center space-x-2">
+                                <i class="fas fa-phone"></i>
+                                <span>+8801893558863</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="privacy_policy.html">privacy policy</a></li>
-                    <li><a href="Terms_and_Conditions.html">Terms and Condition</a></li>
-                    <li><a href="Disclaimer.html">Disclaimer</a></li>
-                </ul>
+
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <p class="text-center text-gray-400">
+                    © 2024 CodeByTanjil. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- link js  -->
-    <script src="/assets/js/app.js" defer></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/app.js"></script>
 </body>
-
 </html>
