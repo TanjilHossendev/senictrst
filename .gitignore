@@ -3,6 +3,8 @@ node_modules/
 src 
 assets/css
 
+assets/js
+
 package-lock.json
 
 package.json
