@@ -43,98 +43,270 @@
                  url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf) format('truetype');
         }
     </style>
-    <link rel="preload" href="assets/css/privacy-policy.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/privacy-policy.css"></noscript>
+    <link rel="preload" href="assets/minify_css/privacy-policy.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/minify_css/privacy-policy.css"></noscript>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo" width="100" height="80"></a>
-            <nav>
-                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul id="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About_Us.html">About us</a></li>
-                    <li><a href="index.html">ALL TOOL</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+    <!-- Header (from index.html) -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-lg border-b border-gray-200/50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex-shrink-0 group" aria-label="CodeByTanjil Home">
+                    <img src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo" width="100" height="80" 
+                         class="w-[100px] h-20 object-contain transition-transform duration-300 group-hover:scale-105" 
+                         fetchpriority="high">
+                </a>
+                <nav class="relative">
+                    <button class="lg:hidden p-2 hover:bg-gray-100 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500" 
+                            onclick="toggleMobileMenu()" 
+                            aria-label="Toggle navigation menu"
+                            aria-expanded="false">
+                        <div class="w-6 h-5 flex flex-col justify-between">
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                        </div>
+                    </button>
+                    <ul id="nav-menu" class="hidden lg:flex lg:items-center lg:space-x-8 absolute lg:static top-full right-0 lg:right-auto bg-white/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none w-56 lg:w-auto shadow-xl lg:shadow-none rounded-2xl lg:rounded-none p-6 lg:p-0 mt-2 lg:mt-0 border lg:border-none border-gray-200/50">
+                        <li><a href="index.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Home</a></li>
+                        <li><a href="About_Us.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">About</a></li>
+                        <li><a href="index.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Tools</a></li>
+                        <li><a href="#contact" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="privacy-policy">
-            <h1>Privacy Policy for CodeByTanjil</h1>
-            <p>Hey there! Welcome to CodeByTanjil, a little corner of the internet I’ve poured my heart into building. It’s a place where folks can crunch numbers for things like board feet, CD interest, asphalt projects, or even their Blox Fruits game stats. I know, it’s a bit of a niche mix, but I love creating tools that make life easier, whether you’re a contractor, a gamer, or just someone trying to figure out a land loan. Since you’re trusting my site with your time—and maybe some of your data—I want to be crystal clear about how I handle your privacy. This policy isn’t just a bunch of legal jargon; it’s my promise to you about keeping things honest and safe.</p>
+    <main class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 min-h-screen py-12 px-4 md:px-0">
+        <section class="max-w-3xl mx-auto bg-white/95 rounded-3xl shadow-2xl border border-blue-100 p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gradient mb-4">Privacy Policy for CodeByTanjil</h1>
+            <p class="text-center text-gray-500 mb-8 text-lg">At CodeByTanjil, we care about your privacy. This Privacy Policy explains how we collect, use, and protect your data. By using our site, you agree to the terms below.</p>
+            <div class="prose prose-blue max-w-none text-gray-800 text-lg">
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Who We Are</h2>
+                <p>CodeByTanjil offers free, easy-to-use tools to help you with quick and smart calculations. Our tools include:</p>
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 mb-6 text-base list-disc list-inside">
+                    <li>Board Foot Calculator</li>
+                    <li>CD Interest Calculator</li>
+                    <li>Terminus Calculator</li>
+                    <li>Asphalt Calculator</li>
+                    <li>Blox Fruits Calculator</li>
+                    <li>Calculadora de Horas</li>
+                    <li>Cumulative GPA Calculator</li>
+                    <li>Dave Ramsey Mortgage Calculator</li>
+                    <li>Illinois Paycheck Calculator</li>
+                    <li>Land Loan Calculator</li>
+                </ul>
+                <p>You can find us at <a href="https://codebytanjil.com" class="text-blue-600 hover:underline">codebytanjil.com</a>.</p>
 
-            <h3>What This Policy’s All About</h3>
-            <p>I’ve always believed that trust is the foundation of any good relationship, whether it’s between friends or a website and its users. This privacy policy lays out how CodeByTanjil collects, uses, and protects any information you share when you use our calculators or browse the site. My goal is to keep things straightforward, so you can focus on getting those calculations done without worrying about your info being misused. If something’s not clear, feel free to reach out—I’m here to help.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">What We Collect</h2>
+                <p>When you visit CodeByTanjil, we may collect:</p>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>Your IP address</li>
+                    <li>Your browser type and version</li>
+                    <li>Pages you visit on our site</li>
+                    <li>Time spent on each page</li>
+                    <li>Device type (mobile or desktop)</li>
+                    <li>Location (city-level, not exact address)</li>
+                </ul>
+                <p>We do not collect your name, email, or phone number unless you choose to contact us directly.</p>
 
-            <h3>What Info Do We Collect?</h3>
-            <p>Let’s get real: CodeByTanjil isn’t some data-hungry tech giant trying to track your every move. My site’s pretty simple, and so is what I collect. Here’s the breakdown:</p>
-            <ul>
-                <li><strong>Stuff You Type In</strong>: When you use one of our calculators—like the board foot calculator for a woodworking project or the cumulative GPA calculator for school—you’re plugging in numbers. Those inputs (like board dimensions, interest rates, or hours worked) are processed to give you results, but I don’t store them long-term. Once you close the tab or refresh the page, that data’s gone, like sawdust swept off a workshop floor.</li>
-                <li><strong>Usage Data</strong>: I do collect some basic info about how you interact with the site, like which calculators you use or how long you stick around. This is done through analytics tools (think Google Analytics or similar), but it’s all anonymized. I’m not peeking over your shoulder; I just want to know what’s working so I can make the site better.</li>
-                <li><strong>Cookies</strong>: Yep, my site uses cookies, but not the chocolate chip kind (sadly). These are tiny bits of data that help the site remember your preferences, like if you switched to dark mode or picked a language. They’re harmless and mostly there to make your experience smoother.</li>
-                <li><strong>Contact Info</strong>: If you send me a message through a contact form or email me directly (say, to ask about the Dave Ramsey mortgage calculator or report a bug), I’ll have your name and email address. I only use that to get back to you, and I don’t add you to some random mailing list—promise.</li>
-            </ul>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">How We Use Your Info</h2>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>Improve how our tools work</li>
+                    <li>Fix errors on the site</li>
+                    <li>Make pages load faster</li>
+                    <li>Understand which tools are most helpful</li>
+                    <li>Keep the site safe from bots and attacks</li>
+                    <li>Track general traffic trends</li>
+                </ul>
+                <p>We do not sell, rent, or share your info with anyone.</p>
 
-            <h3>How Do We Use Your Info?</h3>
-            <p>The info I collect is all about making CodeByTanjil a better place for you. For example, if I notice a ton of people are using the Illinois paycheck calculator, I might tweak it to add more features, like factoring in local taxes. The usage data helps me understand what’s popular and what needs a little love. Your contact info, if you share it, is just for replying to your questions or feedback. I’m not in the business of spamming anyone—I hate getting those emails as much as you do.</p>
-            <p>Here’s a quick story: a user once emailed me about the asphalt calculator, saying it helped them save a ton of money on a driveway project. That kind of feedback warms my heart and pushes me to keep improving. But I didn’t keep their email to bug them later; I just thanked them and moved on. That’s how I roll.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Cookies</h2>
+                <p>Like most sites, CodeByTanjil uses cookies. Cookies are small files stored on your device. They help us:</p>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>Remember your tool inputs (like values you type in)</li>
+                    <li>Show you faster load times</li>
+                    <li>Understand how people use our calculators</li>
+                </ul>
+                <p>You can block cookies in your browser settings. Blocking cookies may stop some parts of the site from working.</p>
 
-            <h3>Do We Share Your Info?</h3>
-            <p>Short answer: nope. I don’t sell, trade, or give away your data to anyone. The only time your info might be shared is if I’m legally required to do so—like if a court order comes knocking, which I hope never happens. Other than that, your data stays with me, safe and sound. Even with analytics tools, I make sure everything’s anonymized so no one’s peeking at your personal details.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Third-Party Services</h2>
+                <p>We may use third-party tools for:</p>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>Web analytics (like Google Analytics)</li>
+                    <li>Ads (such as Google AdSense)</li>
+                    <li>Error tracking</li>
+                    <li>Site speed tools</li>
+                </ul>
+                <p>These services may collect their own info, such as cookies or user data. We do not control how they use your data. Please check their privacy policies for details.</p>
 
-            <h3>Keeping Your Data Safe</h3>
-            <p>I take security seriously, even if CodeByTanjil is just a humble calculator site. I use standard protections like SSL encryption (that’s the little padlock in your browser) to keep your connection secure. My servers are locked down tight, and I regularly update the site to patch any vulnerabilities. That said, no system’s 100% bulletproof—hackers are sneaky—but I’m doing everything I can to keep your info safe. If I ever notice a breach (knock on wood), I’ll let you know pronto and take steps to fix it.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Calculator Use and Data</h2>
+                <p>When you use any tool on CodeByTanjil, your inputs (like numbers or dates) are only used to show the result. We do not save or track your input unless it’s part of general traffic logs. These logs are anonymous.</p>
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-blue-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-ruler mr-2"></i>Board Foot Calculator</h3>
+                        <p class="text-gray-600 text-base">Helps woodworkers and builders estimate lumber.</p>
+                    </div>
+                    <div class="bg-yellow-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-yellow-700 mb-2 flex items-center"><i class="fas fa-piggy-bank mr-2"></i>CD Interest Calculator</h3>
+                        <p class="text-gray-600 text-base">Computes earned interest on certificate of deposits.</p>
+                    </div>
+                    <div class="bg-indigo-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-indigo-700 mb-2 flex items-center"><i class="fas fa-location-arrow mr-2"></i>Terminus Calculator</h3>
+                        <p class="text-gray-600 text-base">Assists with journey end times or duration.</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-gray-700 mb-2 flex items-center"><i class="fas fa-road mr-2"></i>Asphalt Calculator</h3>
+                        <p class="text-gray-600 text-base">Calculates the amount of asphalt needed for projects.</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-green-700 mb-2 flex items-center"><i class="fas fa-gamepad mr-2"></i>Blox Fruits Calculator</h3>
+                        <p class="text-gray-600 text-base">A game-based calculator to assist with Roblox stats.</p>
+                    </div>
+                    <div class="bg-orange-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-orange-700 mb-2 flex items-center"><i class="fas fa-clock mr-2"></i>Calculadora de Horas</h3>
+                        <p class="text-gray-600 text-base">Helps with working hours and time tracking, especially for Spanish users.</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-purple-700 mb-2 flex items-center"><i class="fas fa-graduation-cap mr-2"></i>Cumulative GPA Calculator</h3>
+                        <p class="text-gray-600 text-base">Helps students track GPA for school or college.</p>
+                    </div>
+                    <div class="bg-pink-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-pink-700 mb-2 flex items-center"><i class="fas fa-home mr-2"></i>Dave Ramsey Mortgage Calculator</h3>
+                        <p class="text-gray-600 text-base">Based on Ramsey’s style for calculating home loan payments.</p>
+                    </div>
+                    <div class="bg-red-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-red-700 mb-2 flex items-center"><i class="fas fa-money-bill-wave mr-2"></i>Illinois Paycheck Calculator</h3>
+                        <p class="text-gray-600 text-base">Estimates paycheck in Illinois after tax deductions.</p>
+                    </div>
+                    <div class="bg-teal-50 rounded-xl p-4 shadow">
+                        <h3 class="font-semibold text-teal-700 mb-2 flex items-center"><i class="fas fa-landmark mr-2"></i>Land Loan Calculator</h3>
+                        <p class="text-gray-600 text-base">Calculates payments for land purchases.</p>
+                    </div>
+                </div>
+                <p>We keep each calculator free to use and simple to access. No login is required.</p>
 
-            <h3>Cookies and Tracking—What’s the Deal?</h3>
-            <p>Cookies are like the unsung heroes of the internet. They make sure the site remembers you a little, so you don’t have to keep resetting things. On CodeByTanjil, cookies might track which calculator you used last or save your preferred settings. You can totally turn cookies off in your browser if you want, but the site might not work as smoothly. It’s like trying to build a table without a measuring tape—possible, but trickier.</p>
-            <p>I also use third-party analytics to get a big-picture view of how the site’s doing. These tools don’t know who you are; they just tell me things like “50 people used the land loan calculator today.” It’s all anonymous and helps me figure out what to focus on next.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Data Security</h2>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>HTTPS encryption</li>
+                    <li>Trusted hosting</li>
+                    <li>Regular updates</li>
+                </ul>
+                <p>But remember, no site is 100% secure. Use our tools for quick help, not for saving personal or sensitive data.</p>
 
-            <h3>Your Choices, Your Control</h3>
-            <p>You’ve got rights when it comes to your data, and I respect that. Here’s what you can do:</p>
-            <ul>
-                <li><strong>Opt Out of Cookies</strong>: Most browsers let you block cookies or clear them out. Check your browser settings if you want to go cookie-free.</li>
-                <li><strong>Contact Me</strong>: If you’ve sent me an email and want me to delete your info, just say the word. I’ll wipe it from my records faster than you can calculate a GPA.</li>
-                <li><strong>Stop Using the Site</strong>: If you’re not comfy with how things work, you can always walk away. No hard feelings—I just want you to feel good about using CodeByTanjil.</li>
-            </ul>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Children’s Privacy</h2>
+                <p>CodeByTanjil does not target kids under 13. If you are a parent and believe your child has used our site, contact us. We will remove any data we may have.</p>
 
-            <h3>Changes to This Policy</h3>
-            <p>The internet’s always changing, and so might this policy. If I make any big updates—like adding a new feature that collects different data—I’ll let you know by posting a notice on the site or updating this page. I’ll always keep the latest version here, so you can check back anytime. If you’ve got questions, don’t hesitate to reach out.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">International Users</h2>
+                <p>Our tools are open to everyone. But if you are outside Bangladesh, your data may be processed in Bangladesh. By using the site, you agree to this.</p>
 
-            <h3>A Quick Note for Kids</h3>
-            <p>I love that young folks might be using my calculators—maybe to figure out their GPA or play around with the Blox Fruits calculator. But if you’re under 13, please get your parents’ okay before using the site. I don’t knowingly collect info from kids, and I want to keep things safe for everyone.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Links to Other Sites</h2>
+                <p>Sometimes we may link to other websites. These sites have their own rules. We are not responsible for their content or privacy policies.</p>
 
-            <h3>Wrapping Up</h3>
-            <p>Building CodeByTanjil has been a labor of love, and I’m grateful you’re here using it. I know privacy can feel like a big, scary topic, but I’m committed to keeping things simple and transparent. Your trust means the world to me, and I’ll always work to protect it. If you’ve got any questions or just want to chat about how the terminus calculator saved your day, drop me a line at <a href="mailto:tangilm80@gmail.com">tangilm80@gmail.com</a>. Thanks for being part of this little project of mine.</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Your Choices</h2>
+                <ul class="mb-6 text-base list-disc list-inside">
+                    <li>Turn off cookies in your browser</li>
+                    <li>Use incognito/private browsing</li>
+                    <li>Clear your browser history after using tools</li>
+                    <li>Contact us if you have privacy questions</li>
+                </ul>
 
-            <p class="last-updated"><strong>Last Updated</strong>: July 7, 2025</p>
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Changes to This Policy</h2>
+                <p>We may update this page if laws change or we improve our site. You should check back here once in a while to see the latest version.</p>
+                <p class="mb-6">We last updated this policy on: <span class="font-semibold">July 9, 2025</span></p>
+
+                <h2 class="text-2xl font-bold text-primary-600 mt-8 mb-2">Contact Us</h2>
+                <p>If you have any questions about this policy, please email:<br>
+                    <a href="mailto:tangilm80@gmail.com" class="text-blue-600 hover:underline">tangilm80@gmail.com</a>
+                </p>
+                <p>Or visit:<br>
+                    <a href="https://codebytanjil.com" class="text-blue-600 hover:underline">https://codebytanjil.com</a>
+                </p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <!-- Footer (from index.html) -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Section -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo" class="w-16 h-16 mr-4">
+                        <span class="text-2xl font-bold text-gradient">CodeByTanjil</span>
+                    </div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Your trusted partner for professional-grade calculators and tools. We're committed to providing accurate, 
+                        fast, and reliable calculation solutions for all your needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Phone">
+                            <i class="fas fa-phone text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Email">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="YouTube">
+                            <i class="fab fa-youtube text-lg"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="copyright">© 2025 All rights reserved - All Tools</p>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gradient">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li><a href="About_Us.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-info-circle mr-2"></i>About Us</a></li>
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-tools mr-2"></i>All Tools</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tools -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gradient">Popular Tools</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-calculator mr-2"></i>Mortgage Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-ruler mr-2"></i>Board Foot Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-graduation-cap mr-2"></i>GPA Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-road mr-2"></i>Asphalt Calculator</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="privacy_policy.html">privacy policy</a></li>
-                    <li><a href="Terms_and_Conditions.html">Terms and Condition</a></li>
-                    <li><a href="Disclaimer.html">Disclaimer</a></li>
-                </ul>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400">© 2025 CodeByTanjil. All rights reserved.</p>
+                        <p class="text-sm text-gray-500 mt-1">Made with ❤️ by Tanjil</p>
+                    </div>
+                    <nav>
+                        <ul class="flex flex-wrap justify-center gap-6">
+                            <li>
+                                <a href="privacy_policy.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="About_Us.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Disclaimer.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    Disclaimer
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>

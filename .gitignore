@@ -1,0 +1,12 @@
+node_modules/
+
+src 
+assets/css
+
+package-lock.json
+
+package.json
+
+tailwind.config.js
+
+#ignor file list

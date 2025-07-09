@@ -49,79 +49,158 @@
 
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo"><img fetchpriority="high" src="assets/image/codebytanjil.png" alt="CodebyTanjil Logo" width="100" height="80"></a>
-            <nav>
-                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul id="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About_Us.html">About us</a></li>
-                    <li><a href="index.html">ALL TOOL</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+    <!-- Header (from index.html) -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-lg border-b border-gray-200/50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex-shrink-0 group" aria-label="CodeByTanjil Home">
+                    <img src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo" width="100" height="80" 
+                         class="w-[100px] h-20 object-contain transition-transform duration-300 group-hover:scale-105" 
+                         fetchpriority="high">
+                </a>
+                <nav class="relative">
+                    <button class="lg:hidden p-2 hover:bg-gray-100 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500" 
+                            onclick="toggleMobileMenu()" 
+                            aria-label="Toggle navigation menu"
+                            aria-expanded="false">
+                        <div class="w-6 h-5 flex flex-col justify-between">
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                            <span class="w-full h-0.5 bg-gray-800 transition-all duration-300 hamburger-line"></span>
+                        </div>
+                    </button>
+                    <ul id="nav-menu" class="hidden lg:flex lg:items-center lg:space-x-8 absolute lg:static top-full right-0 lg:right-auto bg-white/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none w-56 lg:w-auto shadow-xl lg:shadow-none rounded-2xl lg:rounded-none p-6 lg:p-0 mt-2 lg:mt-0 border lg:border-none border-gray-200/50">
+                        <li><a href="index.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Home</a></li>
+                        <li><a href="About_Us.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">About</a></li>
+                        <li><a href="index.html" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Tools</a></li>
+                        <li><a href="#contact" class="nav-item block py-3 px-4 lg:p-0 text-gray-700 hover:text-primary-600 transition-all duration-300 font-medium text-sm uppercase tracking-wider">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main>
-        <h1>Disclaimer</h1>
-
-        <p>
-            Welcome to <strong>CodebyTanjil</strong> – your go-to platform for reliable, free, and user-friendly online
-            calculators.
-            Our tools, including the <strong>board foot calculator</strong>, <strong>CD interest calculator</strong>,
-            <strong>terminus calculator</strong>, <strong>asphalt calculator</strong>, <strong>blox fruits
-                calculator</strong>, <strong>calculadora de horas</strong>, <strong>cumulative GPA calculator</strong>,
-            <strong>Dave Ramsey mortgage calculator</strong>, <strong>Illinois paycheck calculator</strong>, and
-            <strong>land loan calculator</strong>, are designed to assist you in simplifying complex calculations.
-        </p>
-
-        <p>
-            Please note that while we strive to ensure the accuracy and reliability of every calculator provided on
-            CodebyTanjil, we cannot guarantee that the results will be applicable to your specific situation. These
-            tools
-            are for informational and general guidance purposes only.
-        </p>
-
-        <p>
-            We highly recommend consulting with a certified professional or expert before making financial, educational,
-            or
-            any critical decisions based on the results from our calculators.
-        </p>
-
-        <p>
-            By using this website and its tools, you acknowledge and agree that CodebyTanjil will not be held liable for
-            any
-            outcomes or decisions made based on the information provided here.
-        </p>
-
-        <p>
-        Thank you for choosing <strong>CodebyTanjil</strong> – where accuracy meets simplicity.
-        </p>
+    <main class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 min-h-screen py-12 px-4 md:px-0">
+        <section class="max-w-3xl mx-auto bg-white/95 rounded-3xl shadow-2xl border border-blue-100 p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gradient mb-4">Disclaimer – CodeByTanjil</h1>
+            <p class="text-center text-gray-500 mb-8 text-lg">Last Updated: <time datetime="2025-07-09">July 9, 2025</time></p>
+            <div class="prose prose-blue max-w-none text-gray-800 text-lg">
+                <p>The tools and calculators on <strong>codebytanjil</strong> (also known as Tanjil, Tangil, tanjil, CodeByTanjil, or codebytanjile) are made for general information only. We try to keep all tools updated and accurate, but we do not promise they are perfect or always right.</p>
+                <p>Use of any tool or calculator, such as the Board Foot Calculator, CD Interest Calculator, Terminus Calculator, Asphalt Calculator, Blox Fruits Calculator, Calculadora de Horas, Cumulative GPA Calculator, Dave Ramsey Mortgage Calculator, Illinois Paycheck Calculator, or Land Loan Calculator, is fully at your own risk.</p>
+                <p><strong>Codebytanjil does not offer any legal, tax, investment, academic, or financial advice.</strong> These tools are not a substitute for advice from a certified professional. Always talk to a trusted expert before making any big decision based on tool results.</p>
+                <p>We are not responsible for any errors, delays, or losses you may face from using the data or results on CodeByTanjil. While we try to keep everything running smoothly, we do not promise that our tools will always be available or free from bugs.</p>
+                <p>Our website may link to other sites. These external links are for your help, but we do not control them. Codebytanjil is not responsible for the content, safety, or actions of any other websites.</p>
+                <p>All calculators and content found on codebytanjile are offered "as-is", with no promises of accuracy or performance. You accept this when you use our site.</p>
+                <p>We may update or change our tools, calculators, or information anytime, without notice. It is your job to check for updates and use the tools carefully.</p>
+                <p>All the tool names on this site, including but not limited to Board Foot Calculator, CD Interest Calculator, Land Loan Calculator, and others, are for identification only. Their use does not imply any endorsement, partnership, or official connection with any company or brand.</p>
+                <p>The codebytanjil team works hard to make useful tools for your daily needs. But results may vary based on many outside factors like changes in law, local rules, or unique user data. Please use good judgment.</p>
+                <p>We do not store personal info entered into calculators. But remember, nothing online is ever 100% safe. Use our site with care.</p>
+                <p><span class="font-semibold">codebytanjil, tanjil, tangil</span>, and all versions of our name listed above are used for better search rankings and to help users find us online. They all refer to our same service and team.</p>
+                <p>By using this website, you agree that we are not legally responsible for any issues, losses, or problems that may come from using our content or tools.</p>
+                <p>Our tools work best as a guide, not a final answer. Real-life numbers may be different, depending on your local laws, personal info, or changes outside our control.</p>
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 rounded-xl">
+                    <h2 class="text-xl font-bold text-blue-700 mb-2">Example of Use at Your Own Risk:</h2>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                        <li>If you use the Illinois Paycheck Calculator or Land Loan Calculator, make sure you cross-check the result with your local policies or financial records. The numbers are only as accurate as the data you enter.</li>
+                        <li>If you are using our Blox Fruits Calculator, remember this is just a fan-made helper. It is not linked with any game developer. Use it for fun, not to make real decisions.</li>
+                    </ul>
+                </div>
+                <h2 class="text-xl font-bold text-red-700 mt-8 mb-2">No Warranties:</h2>
+                <p>We make no warranty that any result or tool is fit for a specific purpose. Everything is "as available" with no extra promises.</p>
+                <h2 class="text-xl font-bold text-indigo-700 mt-8 mb-2">No Professional Relationship:</h2>
+                <p>Using codebytanjil or tools from CodeByTanjil does not create any professional link between us and you.</p>
+                <p>If you find an error, outdated info, or something confusing on our site, you can contact us. But we are not required to fix or change anything.</p>
+                <p>You agree not to misuse or republish any content or tool result from CodeByTanjil. All content is our own work or shared with permission.</p>
+                <p>Please follow all local rules and laws when using any calculator from this site. We do not support using our tools in illegal or unsafe ways.</p>
+                <p>If any part of this disclaimer is found to be invalid under the law, the rest of it stays valid and in full effect.</p>
+                <p>We may update this disclaimer any time. When you use codebytanjil, you agree to the latest version.</p>
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 my-6 rounded-xl">
+                    <p class="font-semibold text-green-700">This disclaimer is made to protect us and help you use our services safely and wisely. Thanks for using CodeByTanjil, and enjoy our tools responsibly.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                    <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <!-- Footer (from index.html) -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Section -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/image/codebytanjil.png" alt="CodeByTanjil Logo" class="w-16 h-16 mr-4">
+                        <span class="text-2xl font-bold text-gradient">CodeByTanjil</span>
+                    </div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Your trusted partner for professional-grade calculators and tools. We're committed to providing accurate, 
+                        fast, and reliable calculation solutions for all your needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Phone">
+                            <i class="fas fa-phone text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="Email">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110" aria-label="YouTube">
+                            <i class="fab fa-youtube text-lg"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="copyright">© 2025 All rights reserved - All Tools</p>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gradient">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li><a href="About_Us.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-info-circle mr-2"></i>About Us</a></li>
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-tools mr-2"></i>All Tools</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tools -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gradient">Popular Tools</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-calculator mr-2"></i>Mortgage Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-ruler mr-2"></i>Board Foot Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-graduation-cap mr-2"></i>GPA Calculator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center"><i class="fas fa-road mr-2"></i>Asphalt Calculator</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="privacy_policy.html">privacy policy</a></li>
-                    <li><a href="Terms_and_Conditions.html">Terms and Condition</a></li>
-                    <li><a href="Disclaimer.html">Disclaimer</a></li>
-                </ul>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400">© 2025 CodeByTanjil. All rights reserved.</p>
+                        <p class="text-sm text-gray-500 mt-1">Made with ❤️ by Tanjil</p>
+                    </div>
+                    <nav>
+                        <ul class="flex flex-wrap justify-center gap-6">
+                            <li>
+                                <a href="privacy_policy.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Terms_and_Conditions.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Disclaimer.html" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                                    Disclaimer
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>
