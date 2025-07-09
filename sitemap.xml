@@ -1,33 +1,30 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-<loc>https://www.codebytanjil.xyz/</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>http://www.codebytanjil.xyz/index.html</loc>
 </url>
 <url>
-<loc>https://www.codebytanjil.xyz/About_Us</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.codebytanjil.xyz/About_Us.html</loc>
 </url>
 <url>
-<loc>https://www.codebytanjil.xyz/contact_us</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.codebytanjil.xyz/contact_us.html</loc>
 </url>
 <url>
-<loc>https://www.codebytanjil.xyz/privacy_policy</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.codebytanjil.xyz/privacy_policy.html</loc>
 </url>
 <url>
-<loc>https://www.codebytanjil.xyz/Terms_and_Conditions</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.codebytanjil.xyz/Terms_and_Conditions.html</loc>
 </url>
 <url>
-<loc>https://www.codebytanjil.xyz/Disclaimer</loc>
-<lastmod>2025-07-09T19:38:32+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.codebytanjil.xyz/Disclaimer.html</loc>
+</url>
+<url>
+  <loc>http://www.codebytanjil.xyz/cdn-cgi/l/email-protection#99edf8f7f3f0f5f4a1a9d9fef4f8f0f5b7faf6f4</loc>
+</url>
+<url>
+  <loc>http://www.codebytanjil.xyz/cdn-cgi/l/email-protection#b2c6d3dcd5dbdedf8a82f2d5dfd3dbde9cd1dddf</loc>
+</url>
+<url>
+  <loc></loc>
 </url>
 </urlset>
