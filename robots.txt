@@ -1,12 +1,7 @@
-
-# robots.txt for https://www.codebytanjil.xyz/
-
 User-agent: *
+Disallow: /search
+Disallow: /category/
+Disallow: /tag/
 Allow: /
-
-# Block sensitive or backend folders
-Disallow: /assets/js/
-Disallow: /src/
-
-# Sitemap location
 Sitemap: https://www.codebytanjil.xyz/sitemap.xml
+Sitemap: https://www.codebytanjil.xyz/sitemap-pages.xml
