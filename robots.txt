@@ -1,8 +1,5 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
 
 User-agent: *
-Allow: /sitemap.xml
 Allow: /
 
 Sitemap: https://www.codebytanjil.xyz/sitemap.xml
