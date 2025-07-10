@@ -1,69 +1,7 @@
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Claude-SearchBot
-Disallow: /
-
-User-agent: Claude-User
-Disallow: /
-
-User-agent: PerplexityBot
-Disallow: /
-
-User-agent: Perplexity-User
-Disallow: /
-
-User-agent: OAI-SearchBot
-Disallow: /
-
-User-agent: MistralAI-User
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
-
-User-agent: Meta-ExternalAgent
-Disallow: /
-
-User-agent: Meta-ExternalFetcher
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Timpibot
-Disallow: /
-
-User-agent: ProRataInc
-Disallow: /
-
-# SEO bots allow
 User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
 Allow: /
 
-User-agent: BingBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: FacebookBot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: archive.org_bot
-Allow: /
-
-User-agent: DuckAssistBot
-Allow: /
-
-# Sitemap
 Sitemap: https://www.codebytanjil.xyz/sitemap.xml
