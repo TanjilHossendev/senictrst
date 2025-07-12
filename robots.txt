@@ -3,3 +3,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.codebytanjil.xyz/sitemap_index.xml
+Sitemap: https://www.codebytanjil.xyz/sub_page/sitemap_sub_page.xml
