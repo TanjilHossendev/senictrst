@@ -3,4 +3,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.codebytanjil.xyz/sitemap_index.xml
+Sitemap: https://www.codebytanjil.xyz/sitemap_main.xml
 Sitemap: https://www.codebytanjil.xyz/sub_page/sitemap_sub_page.xml
+Sitemap: https://www.codebytanjil.xyz/sub_page/Financial_Calculators/sitemap_financial_calculator.xml
