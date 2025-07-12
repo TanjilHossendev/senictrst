@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap>
-<loc>https://www.codebytanjil.xyz/sitemap_main.xml</loc>
-<lastmod>2025-01-15T12:00:00+00:00</lastmod>
-</sitemap>
-<sitemap>
-<loc>https://www.codebytanjil.xyz/sub_page/sitemap_sub_page.xml</loc>
-<lastmod>2025-01-15T12:00:00+00:00</lastmod>
-</sitemap>
-<sitemap>
-<loc>https://www.codebytanjil.xyz/sub_page/Financial_Calculators/sitemap_financial_calculator.xml</loc>
-<lastmod>2025-01-15T12:00:00+00:00</lastmod>
-</sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://www.codebytanjil.xyz/</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.codebytanjil.xyz/About_Us</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.codebytanjil.xyz/contact_us</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.codebytanjil.xyz/privacy_policy</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.codebytanjil.xyz/Terms_and_Conditions</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.codebytanjil.xyz/Disclaimer</loc>
+<lastmod>2025-07-09T19:38:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+</urlset>
