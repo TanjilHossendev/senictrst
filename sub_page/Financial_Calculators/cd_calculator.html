@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>CD Calculator (2025) – Calculate Certificate of Deposit Growth & Profit | code by tanjil</title>
+    <title>CD Calculator (2025) – Calculate Certificate of Deposit Growth & Profit</title>
     <meta name="description"
         content="Use our free online CD calculator to estimate interest, maturity value, and profits. Includes monthly deposits, laddering, APY, and tax info.">
     <meta name="keywords"
@@ -35,6 +35,86 @@
     <meta name="twitter:site" content="@codebytanjil">
 
     <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CD Calculator - Certificate of Deposit Calculator",
+      "alternateName": "Certificate of Deposit Calculator",
+      "url": "https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html",
+      "description": "Free interactive CD calculator to estimate interest, maturity value, and profits. Calculate Certificate of Deposit returns with precision including monthly deposits, laddering, APY, and tax info.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CodeByTanjil",
+        "url": "https://www.codebytanjil.xyz/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png",
+          "width": 100,
+          "height": 80
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Tanjil"
+      },
+      "mainEntity": {
+        "@type": "SoftwareApplication",
+        "name": "Interactive CD Calculator",
+        "description": "Calculate Certificate of Deposit returns with real-time updates, charts, and PDF export functionality",
+        "applicationCategory": "FinanceApplication",
+        "featureList": [
+          "Real-time CD calculations",
+          "Interactive charts and graphs",
+          "PDF export functionality",
+          "Multiple compounding frequencies",
+          "Tax calculation estimates",
+          "CD laddering strategies"
+        ]
+      }
+    }
+    </script>
+
+    <!-- Additional Schema.org for Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "CD Calculator (2025) – Calculate Certificate of Deposit Growth & Profit",
+      "description": "Use our free online CD calculator to estimate interest, maturity value, and profits. Includes monthly deposits, laddering, APY, and tax info.",
+      "author": {
+        "@type": "Person",
+        "name": "Tanjil"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CodeByTanjil",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png",
+          "width": 100,
+          "height": 80
+        }
+      },
+      "datePublished": "2025-01-27",
+      "dateModified": "2025-01-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html"
+      },
+      "articleSection": "Finance",
+      "keywords": ["CD calculator", "certificate of deposit calculator", "compound interest calculator", "APY calculator", "investment calculator", "financial calculator"]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" href="../../assets/image/codebytanjil_favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="../../assets/image/codebytanjil_favicon.png">
@@ -46,10 +126,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- External Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- External Libraries - Lazy Loaded -->
+    <script>
+        // Lazy loading configuration for external libraries
+        window.cdCalculatorLibs = {
+            chartJs: {
+                loaded: false,
+                loading: false,
+                url: 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js'
+            },
+            jsPdf: {
+                loaded: false,
+                loading: false,
+                url: 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'
+            },
+            html2canvas: {
+                loaded: false,
+                loading: false,
+                url: 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'
+            }
+        };
+
+        // Utility function to load scripts dynamically
+        function loadScript(url) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = url;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+
+        // Load Chart.js when needed
+        async function loadChartJs() {
+            if (window.cdCalculatorLibs.chartJs.loaded) return;
+            if (window.cdCalculatorLibs.chartJs.loading) {
+                // Wait for loading to complete
+                while (window.cdCalculatorLibs.chartJs.loading) {
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+                return;
+            }
+            
+            window.cdCalculatorLibs.chartJs.loading = true;
+            try {
+                await loadScript(window.cdCalculatorLibs.chartJs.url);
+                window.cdCalculatorLibs.chartJs.loaded = true;
+            } catch (error) {
+                console.error('Failed to load Chart.js:', error);
+                throw error;
+            } finally {
+                window.cdCalculatorLibs.chartJs.loading = false;
+            }
+        }
+
+        // Load PDF libraries when needed
+        async function loadPdfLibs() {
+            if (window.cdCalculatorLibs.jsPdf.loaded && window.cdCalculatorLibs.html2canvas.loaded) return;
+            
+            const promises = [];
+            
+            if (!window.cdCalculatorLibs.jsPdf.loaded && !window.cdCalculatorLibs.jsPdf.loading) {
+                window.cdCalculatorLibs.jsPdf.loading = true;
+                promises.push(
+                    loadScript(window.cdCalculatorLibs.jsPdf.url)
+                        .then(() => { window.cdCalculatorLibs.jsPdf.loaded = true; })
+                        .finally(() => { window.cdCalculatorLibs.jsPdf.loading = false; })
+                );
+            }
+            
+            if (!window.cdCalculatorLibs.html2canvas.loaded && !window.cdCalculatorLibs.html2canvas.loading) {
+                window.cdCalculatorLibs.html2canvas.loading = true;
+                promises.push(
+                    loadScript(window.cdCalculatorLibs.html2canvas.url)
+                        .then(() => { window.cdCalculatorLibs.html2canvas.loaded = true; })
+                        .finally(() => { window.cdCalculatorLibs.html2canvas.loading = false; })
+                );
+            }
+            
+            if (promises.length > 0) {
+                try {
+                    await Promise.all(promises);
+                } catch (error) {
+                    console.error('Failed to load PDF libraries:', error);
+                    throw error;
+                }
+            }
+        }
+    </script>
 
 
 </head>

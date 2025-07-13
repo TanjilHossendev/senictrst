@@ -36,20 +36,73 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "CodeByTanjil",
+      "alternateName": "Code By Tanjil",
       "url": "https://www.codebytanjil.xyz/",
       "description": "Access free, professional-grade calculators and tools. From mortgage calculations to board foot measurements, get instant, accurate results with CodeByTanjil's comprehensive suite of online tools.",
       "publisher": {
         "@type": "Organization",
         "name": "CodeByTanjil",
+        "url": "https://www.codebytanjil.xyz/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png"
-        }
+          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png",
+          "width": 100,
+          "height": 80
+        },
+        "sameAs": [
+          "https://www.codebytanjil.xyz/"
+        ]
       },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://www.codebytanjil.xyz/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Calculator Tools",
+        "description": "Professional calculators and tools",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Financial Calculators",
+            "url": "https://www.codebytanjil.xyz/sub_page/Financial_Calculators/Financial_Calculators.html",
+            "applicationCategory": "FinanceApplication"
+          },
+          {
+            "@type": "SoftwareApplication", 
+            "name": "Measurement Tools",
+            "url": "https://www.codebytanjil.xyz/sub_page/Measurement_Tools/Measurement_Tools.html",
+            "applicationCategory": "UtilityApplication"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Education Tools", 
+            "url": "https://www.codebytanjil.xyz/sub_page/Education_Tools/Education_Tools.html",
+            "applicationCategory": "EducationalApplication"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Additional Schema.org for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CodeByTanjil",
+      "url": "https://www.codebytanjil.xyz/",
+      "logo": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png",
+      "description": "Professional-grade calculators and tools for financial, educational, and measurement calculations",
+      "founder": {
+        "@type": "Person",
+        "name": "Tanjil"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.codebytanjil.xyz/contact_us.html"
       }
     }
     </script>
@@ -68,8 +121,6 @@
     
     <!-- Tailwind CSS (CLI build) -->
     <link href="assets/minify_css/output.css" rel="stylesheet">
-
-    
 </head>
 
 <body class="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 font-sans antialiased">
@@ -137,15 +188,6 @@
                             <i class="fas fa-play mr-2"></i>
                             Watch Demo
                         </button>
-    <!-- YouTube Demo Modal -->
-    <div id="demo-modal" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm hidden">
-        <div class="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 animate-fade-in">
-            <button id="close-demo-modal" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold z-10" aria-label="Close Demo Modal">&times;</button>
-            <div class="aspect-w-16 aspect-h-9 w-full rounded-b-2xl overflow-hidden">
-                <iframe id="demo-video-frame" class="w-full h-80 md:h-96 rounded-b-2xl" src="" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
                     </div>
                 </div>
             </div>
@@ -419,8 +461,6 @@
                 </div>
             </div>
         </section>
-
-        
     </main>
 
     <!-- Footer -->
