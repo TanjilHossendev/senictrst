@@ -2,34 +2,34 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
     <title>CD Calculator (2025) – Calculate Certificate of Deposit Growth & Profit</title>
-    <meta name="description"
-        content="Use our free online CD calculator to estimate interest, maturity value, and profits. Includes monthly deposits, laddering, APY, and tax info.">
-    <meta name="keywords"
-        content="CD calculator, certificate of deposit calculator, interactive CD calculator, compound interest calculator, APY calculator, investment calculator, financial calculator, savings calculator">
-    <meta name="author" content="Tanjil">
-    <meta name="robots" content="index, follow">
-<link rel="canonical"
-        href="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html">
+    <meta name="description" content="Use our free online CD calculator to estimate interest, maturity value, and profits. Includes monthly deposits, laddering, APY, and tax info." />
+    <meta name="keywords" content="CD calculator, certificate of deposit calculator, interactive CD calculator, compound interest calculator, APY calculator, investment calculator, financial calculator, savings calculator" />
+    <meta name="author" content="Tanjil" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html" />
 
     <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Advanced CD Calculator (2025) – Interactive Certificate of Deposit Calculator">
-    <meta property="og:description"
-        content="Free interactive CD calculator with real-time calculations, charts, PDF export. Calculate Certificate of Deposit returns with precision.">
-    <meta property="og:url"
-        content="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html">
-    <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="CodeByTanjil">
+    <meta property="og:title" content="Advanced CD Calculator (2025) – Interactive Certificate of Deposit Calculator" />
+    <meta property="og:description" content="Free interactive CD calculator with real-time calculations, charts, PDF export. Calculate Certificate of Deposit returns with precision." />
+    <meta property="og:url" content="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/cd_calculator.html" />
+    <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodeByTanjil" />
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Advanced CD Calculator (2025) – Interactive Certificate of Deposit Calculator">
-    <meta name="twitter:description"
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Advanced CD Calculator (2025) – Interactive Certificate of Deposit Calculator" />
+    <meta name="twitter:description" content="Free interactive CD calculator with real-time calculations, charts, PDF export." />
+    <meta name="twitter:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png" />
+    <meta name="twitter:site" content="@codebytanjil" />
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
         content="Free interactive CD calculator with real-time calculations, charts, PDF export.">
     <meta name="twitter:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png">
     <meta name="twitter:site" content="@codebytanjil">
@@ -119,101 +119,63 @@
     <link rel="icon" href="../../assets/image/codebytanjil_favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="../../assets/image/codebytanjil_favicon.png">
 
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/lib/chart.min.js" as="script">
+    <link rel="preload" href="./assets/lib/jspdf.min.js" as="script">
+    <link rel="preload" href="./assets/lib/html2canvas.min.js" as="script">
+    <link rel="preload" href="./assets/minify_js/cd_calculator_enhanced.min.js" as="script">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/minify_css/output.css">
     <link rel="stylesheet" href="./assets/minify_css/cd_calculator_enhanced.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    
+    <!-- Font Awesome - Local fallback with CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
+    <!-- Google Fonts - Optimized loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
-    <!-- External Libraries - Local Files -->
+    <!-- Local Libraries - Optimized Loading -->
     <script>
-        // Lazy loading configuration for local libraries
-        window.cdCalculatorLibs = {
-            chartJs: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/chart.min.js'
-            },
-            jsPdf: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/jspdf.min.js'
-            },
-            html2canvas: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/html2canvas.min.js'
-            }
-        };
-
-        // Utility function to load scripts dynamically
-        function loadScript(url) {
+        // Optimized library loading with error handling
+        function loadScript(src, name) {
             return new Promise((resolve, reject) => {
                 const script = document.createElement('script');
-                script.src = url;
-                script.onload = resolve;
-                script.onerror = reject;
+                script.src = src;
+                script.onload = () => {
+                    console.log(`${name} loaded successfully from local`);
+                    resolve();
+                };
+                script.onerror = () => {
+                    console.error(`Failed to load ${name} from local path: ${src}`);
+                    reject(new Error(`Failed to load ${name}`));
+                };
                 document.head.appendChild(script);
             });
         }
 
-        // Load Chart.js when needed
-        async function loadChartJs() {
-            if (window.cdCalculatorLibs.chartJs.loaded) return;
-            if (window.cdCalculatorLibs.chartJs.loading) {
-                // Wait for loading to complete
-                while (window.cdCalculatorLibs.chartJs.loading) {
-                    await new Promise(resolve => setTimeout(resolve, 100));
-                }
-                return;
-            }
-            
-            window.cdCalculatorLibs.chartJs.loading = true;
-            try {
-                await loadScript(window.cdCalculatorLibs.chartJs.url);
-                window.cdCalculatorLibs.chartJs.loaded = true;
-            } catch (error) {
-                console.error('Failed to load Chart.js:', error);
-                throw error;
-            } finally {
-                window.cdCalculatorLibs.chartJs.loading = false;
-            }
-        }
-
-        // Load PDF libraries when needed
-        async function loadPdfLibs() {
-            if (window.cdCalculatorLibs.jsPdf.loaded && window.cdCalculatorLibs.html2canvas.loaded) return;
-            
-            const promises = [];
-            
-            if (!window.cdCalculatorLibs.jsPdf.loaded && !window.cdCalculatorLibs.jsPdf.loading) {
-                window.cdCalculatorLibs.jsPdf.loading = true;
-                promises.push(
-                    loadScript(window.cdCalculatorLibs.jsPdf.url)
-                        .then(() => { window.cdCalculatorLibs.jsPdf.loaded = true; })
-                        .finally(() => { window.cdCalculatorLibs.jsPdf.loading = false; })
-                );
-            }
-            
-            if (!window.cdCalculatorLibs.html2canvas.loaded && !window.cdCalculatorLibs.html2canvas.loading) {
-                window.cdCalculatorLibs.html2canvas.loading = true;
-                promises.push(
-                    loadScript(window.cdCalculatorLibs.html2canvas.url)
-                        .then(() => { window.cdCalculatorLibs.html2canvas.loaded = true; })
-                        .finally(() => { window.cdCalculatorLibs.html2canvas.loading = false; })
-                );
-            }
-            
-            if (promises.length > 0) {
-                try {
-                    await Promise.all(promises);
-                } catch (error) {
-                    console.error('Failed to load PDF libraries:', error);
-                    throw error;
-                }
-            }
-        }
+        // Load all libraries
+        Promise.all([
+            loadScript('./assets/lib/chart.min.js', 'Chart.js'),
+            loadScript('./assets/lib/jspdf.min.js', 'jsPDF'),
+            loadScript('./assets/lib/html2canvas.min.js', 'html2canvas')
+        ]).then(() => {
+            console.log('All libraries loaded successfully');
+            // Dispatch custom event when all libraries are ready
+            window.dispatchEvent(new CustomEvent('librariesLoaded'));
+        }).catch((error) => {
+            console.error('Some libraries failed to load:', error);
+            // Show user-friendly error message
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'fixed top-4 right-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded z-50';
+            errorDiv.innerHTML = '<strong>Notice:</strong> Some features may be limited due to loading issues.';
+            document.body.appendChild(errorDiv);
+            setTimeout(() => errorDiv.remove(), 5000);
+        });
     </script>
 
 
