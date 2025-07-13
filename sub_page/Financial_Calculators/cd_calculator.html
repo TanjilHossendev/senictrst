@@ -126,95 +126,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- External Libraries - Local Files -->
-    <script>
-        // Lazy loading configuration for local libraries
-        window.cdCalculatorLibs = {
-            chartJs: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/chart.min.js'
-            },
-            jsPdf: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/jspdf.min.js'
-            },
-            html2canvas: {
-                loaded: false,
-                loading: false,
-                url: './assets/lib/html2canvas.min.js'
-            }
-        };
-
-        // Utility function to load scripts dynamically
-        function loadScript(url) {
-            return new Promise((resolve, reject) => {
-                const script = document.createElement('script');
-                script.src = url;
-                script.onload = resolve;
-                script.onerror = reject;
-                document.head.appendChild(script);
-            });
-        }
-
-        // Load Chart.js when needed
-        async function loadChartJs() {
-            if (window.cdCalculatorLibs.chartJs.loaded) return;
-            if (window.cdCalculatorLibs.chartJs.loading) {
-                // Wait for loading to complete
-                while (window.cdCalculatorLibs.chartJs.loading) {
-                    await new Promise(resolve => setTimeout(resolve, 100));
-                }
-                return;
-            }
-            
-            window.cdCalculatorLibs.chartJs.loading = true;
-            try {
-                await loadScript(window.cdCalculatorLibs.chartJs.url);
-                window.cdCalculatorLibs.chartJs.loaded = true;
-            } catch (error) {
-                console.error('Failed to load Chart.js:', error);
-                throw error;
-            } finally {
-                window.cdCalculatorLibs.chartJs.loading = false;
-            }
-        }
-
-        // Load PDF libraries when needed
-        async function loadPdfLibs() {
-            if (window.cdCalculatorLibs.jsPdf.loaded && window.cdCalculatorLibs.html2canvas.loaded) return;
-            
-            const promises = [];
-            
-            if (!window.cdCalculatorLibs.jsPdf.loaded && !window.cdCalculatorLibs.jsPdf.loading) {
-                window.cdCalculatorLibs.jsPdf.loading = true;
-                promises.push(
-                    loadScript(window.cdCalculatorLibs.jsPdf.url)
-                        .then(() => { window.cdCalculatorLibs.jsPdf.loaded = true; })
-                        .finally(() => { window.cdCalculatorLibs.jsPdf.loading = false; })
-                );
-            }
-            
-            if (!window.cdCalculatorLibs.html2canvas.loaded && !window.cdCalculatorLibs.html2canvas.loading) {
-                window.cdCalculatorLibs.html2canvas.loading = true;
-                promises.push(
-                    loadScript(window.cdCalculatorLibs.html2canvas.url)
-                        .then(() => { window.cdCalculatorLibs.html2canvas.loaded = true; })
-                        .finally(() => { window.cdCalculatorLibs.html2canvas.loading = false; })
-                );
-            }
-            
-            if (promises.length > 0) {
-                try {
-                    await Promise.all(promises);
-                } catch (error) {
-                    console.error('Failed to load PDF libraries:', error);
-                    throw error;
-                }
-            }
-        }
-    </script>
+    <!-- External Libraries - Direct Load -->
+    <script src="./assets/lib/chart.min.js"></script>
+    <script src="./assets/lib/jspdf.min.js"></script>
+    <script src="./assets/lib/html2canvas.min.js"></script>
 
 
 </head>
