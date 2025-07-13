@@ -126,24 +126,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- External Libraries - Lazy Loaded -->
+    <!-- External Libraries - Local Files -->
     <script>
-        // Lazy loading configuration for external libraries
+        // Lazy loading configuration for local libraries
         window.cdCalculatorLibs = {
             chartJs: {
                 loaded: false,
                 loading: false,
-                url: 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js'
+                url: './assets/lib/chart.min.js'
             },
             jsPdf: {
                 loaded: false,
                 loading: false,
-                url: 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'
+                url: './assets/lib/jspdf.min.js'
             },
             html2canvas: {
                 loaded: false,
                 loading: false,
-                url: 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'
+                url: './assets/lib/html2canvas.min.js'
             }
         };
 
