@@ -1,13 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /assets/minify_js/
-Disallow: /assets/minify_css/
-Disallow: /*.min.js$
-Disallow: /*.min.css$
-
-# Allow important directories
-Allow: /sub_page/
-Allow: /assets/image/
 
 # Sitemaps
 Sitemap: https://www.codebytanjil.xyz/sitemap_index.xml
