@@ -73,16 +73,17 @@
     <link rel="preload" href="./assets/lib/html2canvas.min.js" as="script">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./assets/minify_css/output.css">
-    <link rel="stylesheet" href="./assets/minify_css/mortgage-calculator.css">
+    <link rel="stylesheet" href="./assets/minify_css/output.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./assets/minify_css/output.css"></noscript>
+    <link rel="stylesheet" href="./assets/minify_css/mortgage-calculator.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./assets/minify_css/mortgage-calculator.css"></noscript>
     
     <!-- Local font and icon assets -->
-    <link rel="stylesheet" href="../../assets/fonts/fontawesome/all.min.css">
-    <link href="../../assets/fonts/inter/inter.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../../assets/fonts/fontawesome/all.min.css"></noscript>
+    <link href="../../assets/fonts/inter/inter.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../../assets/fonts/inter/inter.css"></noscript>
 
-    <script src="./assets/lib/chart.min.js" async></script>
-    <script src="./assets/lib/jspdf.min.js" async></script>
-    <script src="./assets/lib/html2canvas.min.js" async></script>
     <script src="./assets/minify_js/mortgage-calculator.js" async></script>
 </head>
 
@@ -1101,6 +1102,9 @@
         </div>
     </footer>
 
+    <script src="./assets/lib/chart.min.js"></script>
+    <script src="./assets/lib/jspdf.min.js"></script>
+    <script src="./assets/lib/html2canvas.min.js"></script>
 </body>
 
 </html>
