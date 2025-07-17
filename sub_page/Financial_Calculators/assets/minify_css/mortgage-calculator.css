@@ -1,0 +1,72 @@
+        /* Dave Ramsey Color Scheme - Pastel Green and Blue */
+        :root {
+            --dave-green: #10b981;
+            --dave-green-light: #6ee7b7;
+            --dave-green-pastel: #a7f3d0;
+            --dave-blue: #3b82f6;
+            --dave-blue-light: #93c5fd;
+            --dave-blue-pastel: #dbeafe;
+        }
+
+        .dave-gradient {
+            background: linear-gradient(135deg, var(--dave-green-pastel) 0%, var(--dave-blue-pastel) 100%);
+        }
+
+        .dave-green-bg {
+            background-color: var(--dave-green);
+        }
+
+        .dave-blue-bg {
+            background-color: var(--dave-blue);
+        }
+
+        .dave-text-green {
+            color: var(--dave-green);
+        }
+
+        .dave-text-blue {
+            color: var(--dave-blue);
+        }
+
+        .enhanced-input {
+            transition: all 0.3s ease;
+        }
+
+        .enhanced-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, var(--dave-green) 0%, var(--dave-blue) 100%);
+            color: white;
+        }
+
+        .comparison-card {
+            transition: all 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .insight-highlight {
+            background: linear-gradient(135deg, var(--dave-green-pastel) 0%, var(--dave-blue-pastel) 100%);
+            border-left: 4px solid var(--dave-green);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideInUp 0.6s ease-out;
+        }

@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Mortgage Payment Calculator Dave Ramsey – Pay Off Fast</title>
+    <meta name="description" content="Use our free Dave Ramsey-style mortgage calculator to find your monthly payment and see how quickly you can pay off your home with smart strategies." />
+    <meta name="keywords" content="Dave Ramsey mortgage calculator, 15 year vs 30 year mortgage, extra payment calculator, mortgage payoff calculator, debt free calculator" />
+    <meta name="author" content="Tanjil" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/mortgage-payment-calculator-dave-ramsey" />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Dave Ramsey Mortgage Calculator (2025) – Smart Home Loan Planning" />
+    <meta property="og:description" content="Calculate mortgage payments, compare loan terms, and discover how extra payments can save thousands in interest." />
+    <meta property="og:url" content="https://www.codebytanjil.xyz/sub_page/Financial_Calculators/mortgage-payment-calculator-dave-ramsey" />
+    <meta property="og:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodeByTanjil" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dave Ramsey Mortgage Calculator – Smart Home Loan Planning" />
+    <meta name="twitter:description" content="Calculate mortgage payments and see how extra payments can save thousands." />
+    <meta name="twitter:image" content="https://www.codebytanjil.xyz/assets/image/codebytanjil.png" />
+    <meta name="twitter:site" content="@codebytanjil" />
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Dave Ramsey Mortgage Calculator",
+      "alternateName": "Mortgage Payment Calculator",
+      "url": "https://www.codebytanjil.xyz/sub_page/Financial_Calculators/mortgage-payment-calculator-dave-ramsey",
+      "description": "Calculate mortgage payments, compare 15-year vs 30-year loans, and see how extra payments can accelerate your path to debt freedom.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CodeByTanjil",
+        "url": "https://www.codebytanjil.xyz/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.codebytanjil.xyz/assets/image/codebytanjil.png",
+          "width": 100,
+          "height": 80
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Tanjil"
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/image/codebytanjil_favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/image/codebytanjil_favicon.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/lib/chart.min.js" as="script">
+    <link rel="preload" href="./assets/lib/jspdf.min.js" as="script">
+    <link rel="preload" href="./assets/lib/html2canvas.min.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/minify_css/output.css">
+    <link rel="stylesheet" href="./assets/minify_css/mortgage-calculator.css">
+    
+    <!-- Local font and icon assets -->
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome/all.min.css">
+    <link href="../../assets/fonts/inter/inter.css" rel="stylesheet">
+
+    <script src="./assets/lib/chart.min.js" async></script>
+    <script src="./assets/lib/jspdf.min.js" async></script>
+    <script src="./assets/lib/html2canvas.min.js" async></script>
+    <script src="./assets/minify_js/mortgage-calculator.js" async></script>
+</head>
+
+<body class="bg-gradient-to-br from-green-50 via-blue-50 to-green-100 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 min-h-screen font-inter antialiased transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 shadow-lg border-b border-gray-200/50 dark:border-gray-700/50 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="../../index.html" class="flex-shrink-0 group" aria-label="CodeByTanjil Home">
+                    <img src="../../assets/image/codebytanjil.png" alt="CodeByTanjil Logo" width="100" height="80"
+                        class="w-[100px] h-20 object-contain transition-transform duration-300 group-hover:scale-105">
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-6" role="navigation" aria-label="Main navigation">
+                    <a href="../../index.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">Home</a>
+                    <a href="../../About_Us.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">About</a>
+                    <a href="../Financial_Calculators/Financial_Calculators.html" class="dave-text-blue font-semibold">Financial Tools</a>
+                    <a href="../../contact_us.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" aria-label="Toggle dark mode" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 text-xl p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <i class="fas fa-moon hidden dark:inline"></i>
+                        <i class="fas fa-sun dark:hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobileMenu" class="md:hidden hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700 pt-4" role="navigation" aria-label="Mobile navigation">
+                <div class="flex flex-col space-y-3">
+                    <a href="../../index.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">Home</a>
+                    <a href="../../About_Us.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">About</a>
+                    <a href="../Financial_Calculators/Financial_Calculators.html" class="dave-text-blue font-semibold">Financial Tools</a>
+                    <a href="../../contact_us.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Page Title -->
+        <div class="text-center mb-12 animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4 leading-tight">
+                <span class="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                    Dave Ramsey Mortgage Calculator
+                </span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+                Use our free Dave Ramsey-style mortgage calculator to find your monthly payment and see how quickly you can pay off your home with smart strategies.
+            </p>
+            <div class="dave-gradient text-gray-800 px-8 py-4 rounded-2xl inline-block shadow-lg">
+                <p class="text-lg font-semibold">💰 Build Wealth Faster with Smart Mortgage Decisions</p>
+            </div>
+        </div>
+
+        <!-- Dave Ramsey Principles -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-fade-in-up">
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-green-200/50 dark:border-green-700/50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <div class="text-3xl mb-2">🏠</div>
+                <h3 class="font-bold dave-text-green mb-1">15-Year Mortgage</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Pay off your home faster and save thousands in interest</p>
+            </div>
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-blue-200/50 dark:border-blue-700/50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <div class="text-3xl mb-2">💸</div>
+                <h3 class="font-bold dave-text-blue mb-1">Extra Payments</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Small extra payments create massive savings</p>
+            </div>
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-green-200/50 dark:border-green-700/50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <div class="text-3xl mb-2">🎯</div>
+                <h3 class="font-bold dave-text-green mb-1">Debt Freedom</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Become completely debt-free years earlier</p>
+            </div>
+        </div>
+
+        <!-- Mortgage Calculator Tool -->
+        <section id="mortgage-calculator" class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden animate-fade-in border border-gray-200/50 dark:border-gray-700/50">
+                <div class="bg-gradient-to-r from-green-600 to-blue-600 p-6 text-white">
+                    <h2 class="text-2xl md:text-3xl font-bold flex items-center">
+                        <i class="fas fa-home mr-3"></i>
+                        Mortgage Payment Calculator Dave Ramsey
+                    </h2>
+                    <p class="mt-2 opacity-90">Calculate payments, compare loan terms, and see your path to debt freedom</p>
+                </div>
+
+                <div class="flex flex-col xl:flex-row">
+                    <!-- Calculator Form -->
+                    <div class="w-full xl:w-1/2 p-6 md:p-8">
+                        <!-- Tab Navigation -->
+                        <div class="flex mb-6 bg-gray-100 dark:bg-gray-800 rounded-xl p-1">
+                            <button id="basicTab" class="tab-button flex-1 py-2 px-4 rounded-lg font-medium transition-all duration-300 active">
+                                Basic Calculator
+                            </button>
+                            <button id="advancedTab" class="tab-button flex-1 py-2 px-4 rounded-lg font-medium transition-all duration-300">
+                                Advanced Options
+                            </button>
+                        </div>
+
+                        <form id="mortgageForm" class="space-y-6" novalidate>
+                            <!-- Basic Tab Content -->
+                            <div id="basicContent" class="tab-content">
+                                <!-- Home Price -->
+                                <div class="form-group">
+                                    <label for="homePrice" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Home Price
+                                        <button type="button" class="ml-1 text-xs dave-text-blue hover:text-blue-700 tooltip-trigger" data-tooltip="The total purchase price of the home">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                        <input id="homePrice" name="homePrice" type="number" min="1" step="1000" required placeholder="300,000"
+                                            class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                    </div>
+                                </div>
+
+                                <!-- Down Payment -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="downPayment" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                            Down Payment ($)
+                                        </label>
+                                        <div class="relative">
+                                            <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                            <input id="downPayment" name="downPayment" type="number" min="0" step="1000" placeholder="60,000"
+                                                class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="downPaymentPercent" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                            Down Payment (%)
+                                        </label>
+                                        <div class="relative">
+                                            <input id="downPaymentPercent" name="downPaymentPercent" type="number" min="0" max="100" step="0.1" placeholder="20"
+                                                class="enhanced-input w-full px-4 py-3 pr-8 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Interest Rate -->
+                                <div>
+                                    <label for="interestRate" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Interest Rate (APR)
+                                        <button type="button" class="ml-1 text-xs dave-text-blue hover:text-blue-700 tooltip-trigger" data-tooltip="Annual Percentage Rate - the yearly cost of your mortgage">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </label>
+                                    <div class="relative">
+                                        <input id="interestRate" name="interestRate" type="number" min="0.01" max="20" step="0.01" required placeholder="6.5"
+                                            class="enhanced-input w-full px-4 py-3 pr-8 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400">%</span>
+                                    </div>
+                                </div>
+
+                                <!-- Loan Term -->
+                                <div>
+                                    <label for="loanTerm" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Loan Term
+                                        <button type="button" class="ml-1 text-xs dave-text-blue hover:text-blue-700 tooltip-trigger" data-tooltip="Dave Ramsey recommends 15-year mortgages for faster payoff and less interest">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </label>
+                                    <select id="loanTerm" name="loanTerm" class="enhanced-input w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                        <option value="15" selected>15 Years (Dave's Recommendation)</option>
+                                        <option value="30">30 Years</option>
+                                        <option value="20">20 Years</option>
+                                        <option value="10">10 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Advanced Tab Content -->
+                            <div id="advancedContent" class="tab-content hidden">
+                                <!-- Extra Monthly Payment -->
+                                <div>
+                                    <label for="extraPayment" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Extra Monthly Payment
+                                        <button type="button" class="ml-1 text-xs dave-text-blue hover:text-blue-700 tooltip-trigger" data-tooltip="Additional amount paid toward principal each month">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                        <input id="extraPayment" name="extraPayment" type="number" min="0" step="50" placeholder="200"
+                                            class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                    </div>
+                                </div>
+
+                                <!-- Property Tax -->
+                                <div>
+                                    <label for="propertyTax" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Annual Property Tax
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                        <input id="propertyTax" name="propertyTax" type="number" min="0" step="100" placeholder="3,600"
+                                            class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                    </div>
+                                </div>
+
+                                <!-- Home Insurance -->
+                                <div>
+                                    <label for="homeInsurance" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        Annual Home Insurance
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                        <input id="homeInsurance" name="homeInsurance" type="number" min="0" step="100" placeholder="1,200"
+                                            class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                    </div>
+                                </div>
+
+                                <!-- PMI -->
+                                <div>
+                                    <label for="pmi" class="block font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                        PMI (Private Mortgage Insurance)
+                                        <button type="button" class="ml-1 text-xs dave-text-blue hover:text-blue-700 tooltip-trigger" data-tooltip="Required if down payment is less than 20%">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 z-10 pointer-events-none font-medium">$</span>
+                                        <input id="pmi" name="pmi" type="number" min="0" step="10" placeholder="150"
+                                            class="enhanced-input w-full pl-8 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:border-green-500 focus:ring-2 focus:ring-green-200 dark:focus:ring-green-800 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                                <button type="submit" class="flex-1 bg-gradient-to-r from-green-600 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-green-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <i class="fas fa-calculator mr-2"></i>
+                                    Calculate Mortgage
+                                </button>
+                                <button type="reset" class="flex-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 transition-all duration-300">
+                                    <i class="fas fa-redo mr-2"></i>
+                                    Reset Form
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Results Panel -->
+                    <div class="w-full xl:w-1/2 p-6 md:p-8 bg-gray-50 dark:bg-slate-800/50">
+                        <!-- Results Summary -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center">
+                                <i class="fas fa-chart-line mr-2 dave-text-green"></i>
+                                Your Mortgage Results
+                            </h3>
+
+                            <div class="grid grid-cols-1 gap-4">
+                                <!-- Monthly Payment -->
+                                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Monthly Payment (P&I)</p>
+                                            <p id="monthlyPayment" class="text-3xl font-bold dave-text-green mt-1">$0</p>
+                                        </div>
+                                        <div class="dave-text-green text-2xl">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Total Payment -->
+                                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Total Payment</p>
+                                            <p id="totalPayment" class="text-3xl font-bold dave-text-blue mt-1">$0</p>
+                                        </div>
+                                        <div class="dave-text-blue text-2xl">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Total Interest -->
+                                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Total Interest</p>
+                                            <p id="totalInterest" class="text-3xl font-bold text-red-600 dark:text-red-400 mt-1">$0</p>
+                                        </div>
+                                        <div class="text-red-500 text-2xl">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Payoff Date -->
+                                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Payoff Date</p>
+                                            <p id="payoffDate" class="text-2xl font-bold text-purple-600 dark:text-purple-400 mt-1">--</p>
+                                        </div>
+                                        <div class="text-purple-500 text-2xl">
+                                            <i class="fas fa-calendar-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chart Container -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-4 flex items-center">
+                                <i class="fas fa-chart-pie mr-2 dave-text-blue"></i>
+                                Payment Breakdown
+                            </h4>
+                            <div class="bg-white dark:bg-slate-900 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-gray-700">
+                                <canvas id="paymentChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Export Options -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <button id="exportPDF" class="flex-1 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900">
+                                <i class="fas fa-file-pdf mr-2"></i>
+                                Export PDF
+                            </button>
+                            <button id="shareResults" class="flex-1 dave-green-bg hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900">
+                                <i class="fas fa-share mr-2"></i>
+                                Share Results
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15 vs 30 Year Comparison -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    15-Year vs 30-Year Mortgage Comparison
+                </h2>
+
+                <div id="comparisonSection" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- 15-Year Mortgage Card -->
+                    <div class="comparison-card bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-2xl p-6 border-2 border-green-200 dark:border-green-700">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 dave-green-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-rocket text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold dave-text-green mb-2">15-Year Mortgage</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Dave's Recommended Choice</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Monthly Payment:</span>
+                                <span id="payment15" class="font-bold dave-text-green">$0</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Total Interest:</span>
+                                <span id="interest15" class="font-bold text-red-600">$0</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Total Payment:</span>
+                                <span id="total15" class="font-bold dave-text-blue">$0</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-green-100 dark:bg-green-900/50 rounded-lg">
+                            <h4 class="font-bold dave-text-green mb-2">✅ Advantages:</h4>
+                            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                                <li>• Pay off home in half the time</li>
+                                <li>• Save thousands in interest</li>
+                                <li>• Build equity faster</li>
+                                <li>• Lower interest rates</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 30-Year Mortgage Card -->
+                    <div class="comparison-card bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-2xl p-6 border-2 border-blue-200 dark:border-blue-700">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 dave-blue-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-turtle text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold dave-text-blue mb-2">30-Year Mortgage</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Traditional Option</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Monthly Payment:</span>
+                                <span id="payment30" class="font-bold dave-text-blue">$0</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Total Interest:</span>
+                                <span id="interest30" class="font-bold text-red-600">$0</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/50 dark:bg-slate-800/50 rounded-lg">
+                                <span class="font-medium text-gray-700 dark:text-gray-300">Total Payment:</span>
+                                <span id="total30" class="font-bold dave-text-blue">$0</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
+                            <h4 class="font-bold dave-text-blue mb-2">⚠️ Considerations:</h4>
+                            <ul class="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                                <li>• Lower monthly payments</li>
+                                <li>• More cash flow flexibility</li>
+                                <li>• Pay significantly more interest</li>
+                                <li>• Takes twice as long to pay off</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Savings Highlight -->
+                <div id="savingsHighlight" class="mt-8 insight-highlight rounded-2xl p-6">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold dave-text-green mb-4">💰 Your Potential Savings</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <p class="text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide">Interest Savings</p>
+                                <p id="interestSavings" class="text-3xl font-bold dave-text-green">$0</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide">Time Savings</p>
+                                <p id="timeSavings" class="text-3xl font-bold dave-text-blue">15 Years</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide">Debt-Free Date</p>
+                                <p id="debtFreeDate" class="text-2xl font-bold text-purple-600">--</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra Payment Impact -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    The Power of Extra Payments
+                </h2>
+
+                <div id="extraPaymentImpact" class="space-y-6">
+                    <div class="text-center mb-8">
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                            See how small extra payments can create massive savings and accelerate your path to debt freedom.
+                        </p>
+                        <div class="dave-gradient rounded-2xl p-6 inline-block">
+                            <p class="text-xl font-bold text-gray-800">
+                                "Just $100 extra per month can save you tens of thousands!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Extra Payment Results -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                            <div class="dave-text-green text-3xl mb-2">
+                                <i class="fas fa-calendar-minus"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 dark:text-white mb-2">Time Saved</h4>
+                            <p id="extraTimeSaved" class="text-2xl font-bold dave-text-green">0 Years</p>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                            <div class="dave-text-blue text-3xl mb-2">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 dark:text-white mb-2">Interest Saved</h4>
+                            <p id="extraInterestSaved" class="text-2xl font-bold dave-text-blue">$0</p>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                            <div class="text-purple-600 text-3xl mb-2">
+                                <i class="fas fa-flag-checkered"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 dark:text-white mb-2">New Payoff Date</h4>
+                            <p id="extraPayoffDate" class="text-xl font-bold text-purple-600">--</p>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                            <div class="text-orange-600 text-3xl mb-2">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-800 dark:text-white mb-2">ROI on Extra Payment</h4>
+                            <p id="extraPaymentROI" class="text-2xl font-bold text-orange-600">0%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amortization Schedule -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    Amortization Schedule
+                </h2>
+
+                <div class="mb-6 flex flex-col sm:flex-row gap-4 justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <label for="scheduleView" class="font-medium text-gray-700 dark:text-gray-300">View:</label>
+                        <select id="scheduleView" class="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white">
+                            <option value="yearly">Yearly Summary</option>
+                            <option value="monthly">Monthly Details</option>
+                        </select>
+                    </div>
+                    <button id="exportSchedule" class="dave-blue-bg hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>
+                        Export Schedule
+                    </button>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table id="amortizationTable" class="w-full bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                        <thead class="bg-gray-50 dark:bg-slate-700">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Period</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Payment</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Principal</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Interest</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scheduleBody" class="divide-y divide-gray-200 dark:divide-gray-600">
+                            <!-- Schedule rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dave Ramsey Tips -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    Dave Ramsey's Mortgage Wisdom
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-2xl p-6 border border-green-200 dark:border-green-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 dave-green-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-home text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold dave-text-green">15-Year Fixed Rate</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "A 15-year mortgage will save you hundreds of thousands of dollars and get you debt-free in half the time."
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-2xl p-6 border border-blue-200 dark:border-blue-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 dave-blue-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-percentage text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold dave-text-blue">25% Rule</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "Your total monthly housing payment should not exceed 25% of your take-home pay."
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-2xl p-6 border border-purple-200 dark:border-purple-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-arrow-down text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-600">20% Down Payment</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "Put down at least 20% to avoid PMI and start with instant equity in your home."
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/30 dark:to-orange-800/30 rounded-2xl p-6 border border-orange-200 dark:border-orange-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-plus text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-orange-600">Extra Payments</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "Any extra payment goes directly to principal and can save you years of payments."
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-2xl p-6 border border-red-200 dark:border-red-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-ban text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-red-600">No ARM Loans</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "Avoid adjustable-rate mortgages. Stick with fixed rates for predictable payments."
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/30 dark:to-teal-800/30 rounded-2xl p-6 border border-teal-200 dark:border-teal-700">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-teal-600">Emergency Fund First</h3>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-center">
+                            "Have a full emergency fund before buying a house. Don't become house poor."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+       
+
+        <!-- How to Use Section -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    How to Use This Mortgage Calculator
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-300 mb-12">Want to know your monthly payment? Want to pay off your home faster? This tool helps.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Step-by-Step Instructions -->
+                    <div class="lg:col-span-2">
+                        <h3 class="text-2xl font-bold dave-text-green mb-6">✅ Step-by-Step Instructions</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-green-bg text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Enter Your Loan Amount</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Type the total amount you plan to borrow.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-green-bg text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Enter the Interest Rate</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Put the rate your lender offers. It’s usually between 5% and 8%.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-green-bg text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Choose Your Loan Term</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Pick a 15-year term. That’s what Dave Ramsey recommends. You can try 30 years too.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-blue-bg text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Add Down Payment (Optional)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">If you’re paying anything upfront, add that amount. It helps lower the loan size.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-blue-bg text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Add Extra Monthly Payment (Optional)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Want to pay off your loan faster? Add an amount to go toward the principal.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 dave-blue-bg text-white rounded-full flex items-center justify-center font-bold text-lg">6</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Add Tax and Insurance (Optional)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">If you know your yearly property tax and insurance cost, add them too.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">7</div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-lg text-gray-800 dark:text-white">Hit “Calculate”</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">You’ll see your monthly payment, total interest, payoff date, and a full payment schedule.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- What This Tool Tells You -->
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-2xl p-6 border-2 border-blue-200 dark:border-blue-700">
+                        <h3 class="text-2xl font-bold dave-text-blue mb-6">What This Tool Tells You</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle dave-text-green mr-3"></i>What you’ll owe each month</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle dave-text-green mr-3"></i>How fast you can pay off the loan</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle dave-text-green mr-3"></i>How much interest you’ll save</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle dave-text-green mr-3"></i>15-year vs 30-year comparison</li>
+                        </ul>
+                        <h3 class="text-2xl font-bold dave-text-blue mt-8 mb-6">Why Use the Dave Ramsey Style</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center"><i class="fas fa-shield-alt dave-text-green mr-3"></i>It avoids risky loans</li>
+                            <li class="flex items-center"><i class="fas fa-wallet dave-text-green mr-3"></i>Keeps payments in budget</li>
+                            <li class="flex items-center"><i class="fas fa-hand-holding-usd dave-text-green mr-3"></i>Helps you stay debt-free</li>
+                            <li class="flex items-center"><i class="fas fa-flag-checkered dave-text-green mr-3"></i>Gives a clear plan to own your home</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Section -->
+        <section class="mb-20">
+            <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                <article class="prose dark:prose-invert max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4 text-center">Mortgage Payment Calculator Dave Ramsey – Pay Off Fast</h2>
+                    
+                    <div class="bg-gray-100 dark:bg-slate-800 rounded-2xl p-6 my-8">
+                        <h3 class="!mt-0">What Is the Mortgage Payment Calculator Dave Ramsey Style?</h3>
+                        <p>The "mortgage payment calculator Dave Ramsey" style helps you understand your loan the way Dave Ramsey recommends. It shows monthly payments, total interest, and ways to pay off your mortgage faster. This calculator avoids risky loans, promotes 15-year fixed mortgages, and encourages extra payments.</p>
+                    </div>
+
+                    <h3>How to Use the Dave Ramsey Mortgage Calculator</h3>
+                    <p>Here’s how you can use it step by step:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Enter your loan amount</strong> – the total mortgage you’re borrowing.</li>
+                        <li><strong>Add your interest rate</strong> – usually 5% to 8% depending on your lender.</li>
+                        <li><strong>Choose a 15-year term</strong> – Dave strongly recommends this.</li>
+                        <li><strong>Enter your down payment</strong> – aim for 20% or more.</li>
+                        <li><strong>Add taxes and insurance</strong> – this gives a more accurate monthly cost.</li>
+                        <li><strong>Hit calculate.</strong> You’ll see:
+                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                                <li>Total monthly payment</li>
+                                <li>Total interest paid over the life of the loan</li>
+                                <li>Amortization schedule (principal vs interest)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="mt-4">Now you can plan better.</p>
+
+                    <div class="bg-green-100 dark:bg-green-900/30 rounded-2xl p-6 my-8 border-l-4 border-green-500">
+                        <h3>Dave Ramsey’s Strategy to Pay Off Mortgage Early</h3>
+                        <p>Dave Ramsey says: <strong>Get out of debt fast.</strong> So, here’s how he suggests paying off your home:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Use a 15-year fixed-rate mortgage.</li>
+                            <li>Don’t spend more than 25% of your monthly income on your payment.</li>
+                            <li>Avoid adjustable-rate and interest-only loans.</li>
+                            <li>Make extra principal payments every month.</li>
+                            <li>Use bonuses or tax refunds to pay lump sums.</li>
+                            <li>Stick to a monthly budget.</li>
+                        </ul>
+                        <p class="mt-4">This plan lowers your interest and saves years of payments.</p>
+                    </div>
+
+                    <h3>Lump Sum vs Monthly Extra Payments</h3>
+                    <p>Should you pay extra each month or make a one-time big payment? Let’s compare:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">
+                        <div class="bg-gray-100 dark:bg-slate-800 p-6 rounded-xl">
+                            <h4 class="font-bold">Option 1: Lump Sum</h4>
+                            <p>Pay a large amount once. Example: BDT 2,00,000 paid after 5 years. Cuts interest and shortens term.</p>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-slate-800 p-6 rounded-xl">
+                            <h4 class="font-bold">Option 2: Monthly Extra Payment</h4>
+                            <p>Add BDT 5,000 to each monthly payment. Slowly reduces principal every month.</p>
+                        </div>
+                    </div>
+                    <p><strong>Which is better?</strong> Both save money. Lump sum gives immediate results. Monthly extras build long-term savings. Do both if you can.</p>
+
+                    <div class="bg-blue-100 dark:bg-blue-900/30 rounded-2xl p-6 my-8 border-l-4 border-blue-500">
+                        <h3>Dave Ramsey’s Baby Steps and Mortgage</h3>
+                        <p>Dave’s Baby Step 6 says: <strong>Pay off your home early!</strong> Only after:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>You’ve paid off all other debt.</li>
+                            <li>You’ve saved 3-6 months emergency fund.</li>
+                            <li>You’re investing 15% in retirement.</li>
+                        </ul>
+                        <p class="mt-4">After this, throw all extra money at your mortgage. Use the Baby Steps Mortgage Calculator to stay on track.</p>
+                    </div>
+
+                    <h3>Time-Based Payoff: Pay Off Faster</h3>
+                    <h4>How to Pay Off a 30-Year Mortgage in 15 Years</h4>
+                    <p>Use this trick: Keep your 30-year mortgage. But pay like it’s a 15-year one. Make payments twice a month. Use the “how to pay off a 30-year mortgage in 15 years calculator”. It shows:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>How much extra to pay monthly</li>
+                        <li>How much time you save</li>
+                        <li>Interest savings</li>
+                    </ul>
+                    <h4 class="mt-4">Want to Finish in 5 Years?</h4>
+                    <p>Use the “how to pay off mortgage in 5 years calculator”. You’ll need big monthly payments. Use if you’re close to retirement or have high income. It’s aggressive—but doable.</p>
+
+                    <h3>Comparing Other Calculators</h3>
+                    <p>Not all mortgage calculators are the same.</p>
+                    <h4 class="mt-4">Wells Fargo Mortgage Calculator vs. Dave Ramsey’s</h4>
+                    <div class="overflow-x-auto my-6">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100 dark:bg-slate-800">
+                                <tr>
+                                    <th class="p-4 font-semibold">Feature</th>
+                                    <th class="p-4 font-semibold">Dave Ramsey</th>
+                                    <th class="p-4 font-semibold">Wells Fargo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Term</td>
+                                    <td class="p-4">Only 15 years</td>
+                                    <td class="p-4">15, 20, 30 years</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Risk</td>
+                                    <td class="p-4">Low</td>
+                                    <td class="p-4">Varies</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Advice</td>
+                                    <td class="p-4">Debt-free focus</td>
+                                    <td class="p-4">Lending options focus</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Extra Payment Option</td>
+                                    <td class="p-4">Yes</td>
+                                    <td class="p-4">Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>If you want to be debt-free fast, Ramsey’s model is safer.</p>
+
+                    <h3>Free Mortgage Calculator Tools to Try</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>RamseySolutions.com – official tool.</li>
+                        <li>NerdWallet – for comparing loan types.</li>
+                        <li>Bankrate – full cost breakdown.</li>
+                    </ul>
+                    <p class="mt-4">Use these before making any home buying decisions.</p>
+
+                    <div class="bg-yellow-100 dark:bg-yellow-900/30 rounded-2xl p-6 my-8 border-l-4 border-yellow-500">
+                        <h3>Affordability: How Much House Can I Afford?</h3>
+                        <p>Dave says: <strong>Your mortgage should be no more than 25% of your take-home pay.</strong> Use the Home Affordability Calculator Dave Ramsey style. It helps:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Avoid overspending</li>
+                            <li>Keep budget safe</li>
+                            <li>Prepare for emergencies</li>
+                        </ul>
+                    </div>
+
+                    <h3>Understanding Principal vs Interest</h3>
+                    <p>When you pay your mortgage: A part goes to interest (bank’s profit). A part goes to principal (your loan). In early years, you pay more interest. Over time, you pay more principal. Use a Principal vs Interest Calculator to see this clearly.</p>
+
+                    <h3>Mortgage Amortization Schedule: Why It Matters</h3>
+                    <p>This schedule shows: Each month’s payment breakdown, what goes to interest, what reduces principal. It keeps you motivated and focused. You’ll see how extra payments reduce interest fast.</p>
+
+                    <h3>Refinancing vs Early Payoff</h3>
+                    <p>Should you refinance or just pay early?</p>
+                    <div class="overflow-x-auto my-6">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100 dark:bg-slate-800">
+                                <tr>
+                                    <th class="p-4 font-semibold">Criteria</th>
+                                    <th class="p-4 font-semibold">Refinance</th>
+                                    <th class="p-4 font-semibold">Early Payoff</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Need New Loan?</td>
+                                    <td class="p-4">Yes</td>
+                                    <td class="p-4">No</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Paperwork</td>
+                                    <td class="p-4">A lot</td>
+                                    <td class="p-4">None</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Cost</td>
+                                    <td class="p-4">Closing fees</td>
+                                    <td class="p-4">None</td>
+                                </tr>
+                                <tr class="border-t border-gray-200 dark:border-gray-700">
+                                    <td class="p-4">Goal</td>
+                                    <td class="p-4">Lower rate</td>
+                                    <td class="p-4">No debt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Dave recommends paying off early unless rates are extremely low.</p>
+
+                    <h3>Debt Snowball for Mortgage?</h3>
+                    <p>This method pays off smallest debts first. Then you move to the next. For mortgage: Not ideal for big loans. Use debt avalanche or extra principal method instead. But you can use the snowball to free up cash from other debts. Then aim all that money at your mortgage.</p>
+
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 my-8">
+                        <h3 class="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h3>
+                        <div class="space-y-4" id="faq-accordion">
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>Is the Dave Ramsey mortgage calculator free?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Yes, you can use it for free at RamseySolutions.com.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>What loan type does Dave Ramsey recommend?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    A 15-year fixed-rate mortgage with 20% down.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>Should I pay extra on my mortgage?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Yes. Extra payments reduce interest and time.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>Is it worth paying off your mortgage early?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Absolutely. You save money and gain peace.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>How much house can I afford?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Stick to 25% of your take-home pay.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>Is refinancing a good idea?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Only if it gives a much lower fixed rate.
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>How does amortization work?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Your payment goes to interest first, then principal.
+                                </div>
+                            </div>
+                            <div>
+                                <button class="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 dark:text-white focus:outline-none">
+                                    <span>What’s better—lump sum or extra monthly?</span>
+                                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                                </button>
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 hidden">
+                                    Both help. Do what fits your income.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <h3 class="text-2xl font-bold">Final Words: Pay Off Your Home, Live Free</h3>
+                        <p class="mt-4 text-lg">The mortgage payment calculator Dave Ramsey way is simple and smart. You know your numbers. You stay debt-free. You protect your future. Use the tools, follow the baby steps, and stick to your plan. You’ll be mortgage-free faster than you thought.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md mt-20 border-t border-gray-200/50 dark:border-gray-700/50">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">CodeByTanjil</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Financial tools and resources to help you achieve your goals.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../../index.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Home</a></li>
+                        <li><a href="../../About_Us.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">About</a></li>
+                        <li><a href="../Financial_Calculators/Financial_Calculators.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Financial Tools</a></li>
+                        <li><a href="../../contact_us.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../../privacy_policy.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Privacy Policy</a></li>
+                        <li><a href="../../Terms_and_Conditions.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Terms & Conditions</a></li>
+                        <li><a href="../../Disclaimer.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-gray-500 dark:text-gray-400">
+                <p>&copy; 2025 CodeByTanjil. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
