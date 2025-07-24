@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours Calculator | Calculadora de Horas</title>
+    <title>Calculadora de Horas – Free Work Hours Calculator (2025)</title>
+
+  <meta name="description" content="Use this free work hours calculator to easily track total hours, breaks, and overtime. Perfect for freelancers, shift workers, and employees.">
+
+  <meta name="keywords" content="calculadora de horas, work hours calculator, calculadora de horas de trabajo, calculadora de horas y minutos, calculadora de horas trabajadas gratis, time calculator online, hourly wage calculator, calculadora de horas online, shift hours calculator">
+
+  <meta name="author" content="Md Tanjil" />
+    <link rel="canonical" href="https://www.codebytanjil.xyz/sub_page/Time_Calculators/Calculadora_de_Horas.html" />
+    <link rel="icon" href="../../assets/image/codebytanjil_favicon.png" type="image/png">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Calculadora de Horas – Free Time Tracking Tool" />
+  <meta property="og:description" content="Track your work hours easily. Use our free calculator for start/end time, breaks, and overtime. No registration needed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.codebytanjil.xyz/sub_page/Time_Calculators/Calculadora_de_Horas.html" />
+  <meta property="og:image" content="../../assets/image/codebytanjil.png" />
+    <link href="./assets/minify_css/Calculadora_de_Horas.min.css" rel="stylesheet">
+    <link href="../../assets/fonts/fontawesome/all.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Can I use this calculator for hourly wage jobs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can use it to find the total hours you worked and then multiply by your wage to find your pay."
+        }
+      },{
+        "@type": "Question",
+        "name": "Does it handle multiple breaks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Currently, it allows you to enter total break time. You can add all breaks together before inputting."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is the calculator free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, it is completely free with no hidden fees."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I calculate overtime hours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you know your standard work hours, subtract them from total hours to find overtime."
+        }
+      },{
+        "@type": "Question",
+        "name": "Does it work on smartphones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the calculator is mobile-friendly and works on all modern devices."
+        }
+      }]
+    }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h1 class="text-3xl font-bold text-center mb-6 text-gray-900">Work Hours Calculator</h1>
+
+            <form id="workHoursForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Input Section -->
+                <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="startTime" class="block text-sm font-medium text-gray-700 mb-1">Start Time</label>
+                        <input type="time" id="startTime" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="endTime" class="block text-sm font-medium text-gray-700 mb-1">End Time</label>
+                        <input type="time" id="endTime" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="breakDuration" class="block text-sm font-medium text-gray-700 mb-1">Break (minutes)</label>
+                        <input type="number" id="breakDuration" min="0" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition" placeholder="e.g., 30">
+                    </div>
+                    <div>
+                        <label for="hourlyWage" class="block text-sm font-medium text-gray-700 mb-1">Hourly Wage ($)</label>
+                        <input type="number" id="hourlyWage" min="0" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition" placeholder="e.g., 20">
+                    </div>
+                </div>
+
+                <!-- Overtime Section -->
+                <div class="md:col-span-2">
+                    <label for="standardWorkday" class="block text-sm font-medium text-gray-700 mb-1">Standard Workday (hours)</label>
+                    <input type="number" id="standardWorkday" min="0" value="8" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+
+                <!-- Buttons -->
+                <div class="md:col-span-2 flex flex-wrap items-center justify-center md:justify-between gap-4">
+                    <button type="button" id="resetBtn" class="w-full md:w-auto bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition shadow-sm"><i class="fas fa-undo mr-2"></i>Reset</button>
+                    <div class="flex gap-4">
+                        <button type="button" id="copyBtn" class="w-full md:w-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition shadow-sm"><i class="fas fa-copy mr-2"></i>Copy</button>
+                        <button type="button" id="downloadBtn" class="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition shadow-sm"><i class="fas fa-download mr-2"></i>Download</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Results Section -->
+            <div id="results" class="mt-8 p-6 bg-gray-50 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-center mb-4 text-gray-900">Results</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">Total Work</p>
+                        <p id="totalHours" class="text-2xl font-bold text-indigo-600">0h 0m</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">Overtime</p>
+                        <p id="overtimeHours" class="text-2xl font-bold text-indigo-600">0h 0m</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">Earnings</p>
+                        <p id="totalEarnings" class="text-2xl font-bold text-indigo-600">$0.00</p>
+                    </div>
+                </div>
+                <div id="errorMessage" class="mt-4 text-red-600 text-center font-medium"></div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="mt-12 prose max-w-none">
+                <h2 class="text-2xl font-bold mb-4">Calculadora de Horas – Free Work Hours Calculator to Track Time Easily</h2>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Introduction</h3>
+                <p>Tracking work hours is a must for many people today. Whether you are a freelancer, shift worker, or manager, knowing how to calculate your work hours helps you stay organized and fair. Our free work hours calculator is designed to make this task simple and fast. This tool helps you calculate your total work time, including breaks, overtime, and minutes. In this article, you will learn how to use this calculator, why it is useful, and tips to manage your time better.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">What Is a Work Hours Calculator?</h3>
+                <p>A work hours calculator is a simple tool. It helps you add or subtract hours and minutes to find your total work time. You enter your start time, end time, and breaks. The calculator then shows how many hours you worked. It removes the need to calculate by hand or use complicated formulas.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Why Use a Work Hours Calculator?</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Save time:</strong> Quickly get the total hours without doing math.</li>
+                    <li><strong>Reduce mistakes:</strong> Avoid errors when adding up work time and breaks.</li>
+                    <li><strong>Bill accurately:</strong> Freelancers can charge clients correctly based on hours worked.</li>
+                    <li><strong>Follow labor laws:</strong> Make sure you respect break times and maximum work hours.</li>
+                    <li><strong>Boost productivity:</strong> Know exactly how much time you spend working and plan better.</li>
+                </ul>
+                <p class="mt-2">For many workers, a tool like this keeps work records clear and easy to understand.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Who Needs a Work Hours Calculator?</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Freelancers:</strong> If you work on projects by the hour, this calculator helps track your billable time. It keeps your invoices fair and exact.</li>
+                    <li><strong>Shift Workers:</strong> For those with night shifts or irregular hours, it helps calculate total work time even if your shift crosses midnight.</li>
+                    <li><strong>Managers and HR:</strong> Human Resources staff can use this tool to monitor employee hours and generate payroll reports.</li>
+                    <li><strong>Contract Workers:</strong> It helps track hours on different jobs, ensuring you get paid for all your time.</li>
+                    <li><strong>Students with Part-time Jobs:</strong> Students can balance work and study by knowing their exact hours.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">How to Use Our Free Work Hours Calculator</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li><strong>Enter Start Time:</strong> Type the time you started work (use 24-hour or AM/PM format).</li>
+                    <li><strong>Enter End Time:</strong> Type the time you finished work.</li>
+                    <li><strong>Add Break Time:</strong> Enter minutes or hours you took for lunch or breaks. This will subtract from total hours.</li>
+                    <li><strong>Calculate:</strong> Click the button to see your total work hours and minutes.</li>
+                    <li><strong>View Results:</strong> The tool will show your total time worked, minus breaks.</li>
+                    <li><strong>Download or Save:</strong> You can save the results or print them for your records.</li>
+                </ol>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Features of Our Work Hours Calculator</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Calculate Hours and Minutes:</strong> Precise results including partial hours.</li>
+                    <li><strong>Include Lunch Breaks:</strong> Easily subtract break time from total hours.</li>
+                    <li><strong>Overnight Shift Support:</strong> Calculate shifts that go past midnight correctly.</li>
+                    <li><strong>Mobile Friendly:</strong> Use the calculator on your phone or tablet.</li>
+                    <li><strong>No Registration Needed:</strong> Access the tool instantly without creating an account.</li>
+                    <li><strong>Free to Use:</strong> No cost, no ads, no catch.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Benefits of Using an Online Work Hours Calculator</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Fast and Accurate:</strong> Manual calculations can be slow and error-prone. Our tool works in seconds and gives exact answers.</li>
+                    <li><strong>Accessible Anywhere:</strong> Since it works online, you can use it on any device, anytime, and anywhere.</li>
+                    <li><strong>Easy to Use for Everyone:</strong> The interface is simple and clear. Even people who don’t use tech much can handle it.</li>
+                    <li><strong>No Installation Required:</strong> You don’t need to download or install software. Just open your browser and use the calculator.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Common Use Cases and Examples</h3>
+                <p><strong>Example 1: Freelancer Billing</strong><br>Ana is a graphic designer. She starts work at 9:00 AM and stops at 5:30 PM. She takes a 1-hour lunch break. Using the calculator, she enters these times. The tool tells her she worked 7.5 hours. Ana uses this number to bill her client fairly.</p>
+                <p><strong>Example 2: Night Shift Worker</strong><br>Carlos works from 10:00 PM to 6:00 AM. He takes 30 minutes for a break. The calculator correctly counts this overnight shift as 7.5 hours.</p>
+                <p><strong>Example 3: Manager Tracking Team Hours</strong><br>Maria manages a small team. She uses the calculator to check that workers report the correct hours. This helps her prepare payroll accurately.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Tips for Better Time Tracking</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Use the calculator daily: Enter your hours every day to avoid mistakes.</li>
+                    <li>Note your breaks carefully: Accurate break time keeps your total hours correct.</li>
+                    <li>Keep records: Save or print your daily work hour reports.</li>
+                    <li>Review weekly: Check your hours at the end of the week to see your work patterns.</li>
+                    <li>Combine with task notes: Add notes about what you worked on for better organization.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">How This Calculator Helps You</h3>
+                <p>Tracking your work hours brings more control and peace of mind. It stops you from guessing how many hours you worked. This leads to better billing, fair pay, and legal compliance. Many people feel less stressed when they have clear time records. Using this calculator is one step toward smarter work habits.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Frequently Asked Questions (FAQs)</h3>
+                <div class="space-y-4" id="faq-accordion">
+                    <div class="border rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            Can I use this calculator for hourly wage jobs?
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="p-4 border-t hidden">
+                            Yes, you can use it to find the total hours you worked and then multiply by your wage to find your pay.
+                        </div>
+                    </div>
+                    <div class="border rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            Does it handle multiple breaks?
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="p-4 border-t hidden">
+                            Currently, it allows you to enter total break time. You can add all breaks together before inputting.
+                        </div>
+                    </div>
+                    <div class="border rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            Is the calculator free to use?
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="p-4 border-t hidden">
+                            Yes, it is completely free with no hidden fees.
+                        </div>
+                    </div>
+                    <div class="border rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            Can I calculate overtime hours?
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="p-4 border-t hidden">
+                            Yes, if you know your standard work hours, subtract them from total hours to find overtime.
+                        </div>
+                    </div>
+                    <div class="border rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            Does it work on smartphones?
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="p-4 border-t hidden">
+                            Yes, the calculator is mobile-friendly and works on all modern devices.
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Why Accurate Time Tracking Matters</h3>
+                <p>In many jobs, your pay depends on hours worked. Tracking time poorly can lead to lost money or disputes. For freelancers, clients expect clear billing. For employees, accurate records protect rights and benefits. Businesses rely on precise hours for payroll and planning. This makes a tool like a work hours calculator essential.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">More About Time Tracking and Productivity</h3>
+                <p>Studies show that people who track their time work more efficiently. They see where they waste time and make changes. Using a calculator is part of this process. It gives clear numbers so you can decide how to improve your schedule.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">How to Improve Your Work Routine Using This Tool</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Set fixed work hours: Use the calculator to check if you keep to your planned hours.</li>
+                    <li>Track breaks strictly: Avoid taking longer breaks than planned.</li>
+                    <li>Analyze weekly results: Look for patterns of overtime or short days.</li>
+                    <li>Plan better rest: If you see you work long hours, schedule breaks and rest.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Legal Aspects of Work Hours</h3>
+                <p>Different countries have laws about maximum daily and weekly work hours. They also regulate required breaks. Using a calculator helps you stay within legal limits. It also supports you if you need proof of your hours.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">How to Get the Most from This Calculator</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Use it as soon as you finish your workday.</li>
+                    <li>Record your hours every day without delay.</li>
+                    <li>Combine the calculator with digital or paper work logs.</li>
+                    <li>Share results with your manager or clients when needed.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">External Resources for Time Tracking and Labor Laws</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="#" class="text-indigo-600 hover:underline">U.S. Department of Labor – Hours Worked</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Freelancer Time Tracking Tips – Freelancers Union</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Time Management Strategies – Mind Tools</a></li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Summary</h3>
+                <p>Using a free work hours calculator is a smart, fast way to track your work time. It helps freelancers, shift workers, and managers avoid mistakes. This tool improves accuracy, saves time, and keeps your work records clear. With no installation or registration, it is easy to start today. Take control of your work hours and boost your productivity now.</p>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Call to Action</h3>
+                <p>Ready to track your hours without errors? Try our free work hours calculator now and start managing your time the smart way! <a href="#workHoursForm" class="text-indigo-600 hover:underline">Use the calculator here</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/minify_js/calculator.min.js"></script>
+</body>
+</html>
